@@ -171,6 +171,9 @@ openclaw config set skills.entries.office365-mail-manager.env.O365_TIMEZONE "Eur
 openclaw config set skills.entries.office365-mail-manager.env.O365_CHECK_INTERVAL "30"
 openclaw config set skills.entries.office365-mail-manager.env.O365_MAX_MAILS "20"
 openclaw config set skills.entries.office365-mail-manager.env.O365_DRY_RUN "false"
+
+# Optional: HTML signature for outgoing emails (auto-appended)
+openclaw config set skills.entries.office365-mail-manager.env.O365_EMAIL_SIGNATURE "<br><br>--<br>Mit freundlichen Grüßen<br><strong>Your Name</strong><br><a href='https://your-domain.com'>your-domain.com</a>"
 ```
 
 ### 5. Test Connection
