@@ -1,0 +1,100 @@
+#!/Users/dome/.openclaw/skills/office365-mail-manager/.venv/bin/python3
+"""
+Tool: o365_send_email
+Send a new email via Office 365.
+"""
+
+import json
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
+
+from auth_microsoft import get_auth_headers, load_config
+import requests
+
+
+def send_email(to, subject, body, cc=None, bcc=None, html=False):
+    """Send a new email via Microsoft Graph API."""
+    config = load_config()
+    user = config['microsoft']['userPrincipalName']
+    headers = get_auth_headers()
+    
+    # Build recipients
+    to_recipients = [{"emailAddress": {"address": addr.strip()}} for addr in to.split(',')]
+    
+    message = {
+        "subject": subject,
+        "body": {
+            "contentType": "HTML" if html else "Text",
+            "content": body
+        },
+        "toRecipients": to_recipients
+    }
+    
+    # Add CC if provided
+    if cc:
+        cc_recipients = [{"emailAddress": {"address": addr.strip()}} for addr in cc.split(',')]
+        message["ccRecipients"] = cc_recipients
+    
+    # Add BCC if provided
+    if bcc:
+        bcc_recipients = [{"emailAddress": {"address": addr.strip()}} for addr in bcc.split(',')]
+        message["bccRecipients"] = bcc_recipients
+    
+    # Send email
+    response = requests.post(
+        f"https://graph.microsoft.com/v1.0/users/{user}/sendMail",
+        headers=headers,
+        json={"message": message, "saveToSentItems": True},
+        timeout=30
+    )
+    response.raise_for_status()
+    
+    return {
+        "success": True,
+        "to": to,
+        "cc": cc,
+        "bcc": bcc,
+        "subject": subject,
+        "contentType": "HTML" if html else "Text"
+    }
+
+
+def main():
+    """Read JSON params from stdin, send email, output JSON result."""
+    try:
+        input_data = json.load(sys.stdin) if not sys.stdin.isatty() else {}
+    except json.JSONDecodeError:
+        input_data = {}
+    
+    params = input_data.get('params', input_data)
+    
+    to = params.get('to')
+    subject = params.get('subject')
+    body = params.get('body')
+    cc = params.get('cc')
+    bcc = params.get('bcc')
+    html = params.get('html', False)
+    
+    if not to or not subject or not body:
+        print(json.dumps({
+            "success": False,
+            "error": "Missing required parameters: to, subject, body"
+        }, indent=2))
+        return 1
+    
+    try:
+        result = send_email(to, subject, body, cc, bcc, html)
+        print(json.dumps(result, indent=2))
+        return 0
+    except Exception as e:
+        print(json.dumps({
+            "success": False,
+            "error": str(e)
+        }, indent=2))
+        return 1
+
+
+if __name__ == '__main__':
+    sys.exit(main())

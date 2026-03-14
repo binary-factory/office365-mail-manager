@@ -84,6 +84,33 @@ tools:
           type: string
           description: Date for summary (YYYY-MM-DD), defaults to today
       required: []
+
+  - name: o365_send_email
+    description: Send a new email via Office 365. Supports HTML or plain text, CC/BCC recipients.
+    command: "${SKILL_DIR}/tools/o365_send_email"
+    parameters:
+      type: object
+      properties:
+        to:
+          type: string
+          description: Recipient email address(es), comma-separated for multiple
+        subject:
+          type: string
+          description: Email subject line
+        body:
+          type: string
+          description: Email body content
+        cc:
+          type: string
+          description: CC recipient(s), comma-separated (optional)
+        bcc:
+          type: string
+          description: BCC recipient(s), comma-separated (optional)
+        html:
+          type: boolean
+          description: Send as HTML instead of plain text (default false)
+          default: false
+      required: [to, subject, body]
 ---
 
 # Office 365 Mail Manager
@@ -210,6 +237,29 @@ openclaw cron add --name="mail-daily-summary" --schedule="0 9 * * *" \
 **Parameters:**
 - `date`: Which day to summarize (default today)
 **Returns:** Summary sent to configured channel.
+
+### o365_send_email
+**When to use:** Send a new email to customers, partners, or team members.
+**Parameters:**
+- `to`: Recipient email address(es), comma-separated for multiple
+- `subject`: Email subject line
+- `body`: Email body content
+- `cc`: CC recipient(s), comma-separated (optional)
+- `bcc`: BCC recipient(s), comma-separated (optional)
+- `html`: Send as HTML instead of plain text (default false)
+**Returns:** Success status and sent email details.
+
+**Examples:**
+```bash
+# Simple text email
+{"to": "kunde@beispiel.de", "subject": "Angebot", "body": "Hallo, hier ist Ihr Angebot..."}
+
+# HTML email with CC
+{"to": "kunde@beispiel.de", "cc": "intern@binary-factory.de", "subject": "Angebot", "body": "<h1>Angebot</h1><p>Details...</p>", "html": true}
+
+# Multiple recipients
+{"to": "a@beispiel.de,b@beispiel.de", "subject": "Newsletter", "body": "Hallo zusammen..."}
+```
 
 ## Categories
 
