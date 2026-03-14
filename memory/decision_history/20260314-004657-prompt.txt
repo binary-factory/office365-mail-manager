@@ -1,0 +1,144 @@
+Du bist ein intelligenter E-Mail-Assistent. Analysiere die folgenden E-Mails und kategorisiere sie.
+
+## Deine Aufgabe
+
+Für jede E-Mail entscheide:
+1. **Kategorie**: important / newsletter / invoice / info / spam
+2. **Aktion**: move / mark_read / forward / none
+3. **Begründung**: Warum diese Entscheidung?
+
+## Kategorien
+
+- **important**: Direkt an dich adressiert, Handlungsbedarf, Kunden, Partner
+- **newsletter**: Massenmails, Marketing, automatisierte Updates
+- **invoice**: Rechnungen, Zahlungsaufforderungen
+- **info**: FYI-Mails ohne Handlungsbedarf
+- **spam**: Unsolicited, irrelevant
+
+## Aktionen
+
+- **move**: In entsprechenden Ordner verschieben
+- **mark_read**: Als gelesen markieren (bei Newsletters)
+- **forward**: Weiterleiten (bei Rechnungen)
+- **none**: Keine Aktion
+
+## Gelernte Regeln (beachten)
+
+
+**Bekannte Absender:**
+- updates-noreply@linkedin.com → newsletter
+
+**Betreff-Muster:**
+- "order" → forward
+- "rechnung" → forward
+- "invoice" → forward
+
+## Zu verarbeitende E-Mails
+
+
+### E-Mail #1
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSZRrCAAA=
+**Von**: Vergabemarktplatz Baden-Württemberg <vergabe.landbw.de@cosinex.de>
+**Betreff**: Neue Aufträge für Ihr Unternehmen (13.03.2026)
+**Empfangen**: 2026-03-13T22:21:18Z
+**Wichtigkeit**: normal
+**Vorschau**: Neue Aufträge für Ihr Unternehmen (13.03.2026)
+
+Guten Tag Domenico Pata,
+
+auf https://ausschreibungen.landbw.de/Center/ gibt es neue Bekanntmachung(en), die zu Ihren
+Suchprofilen mit aktiviertem Benachrichtigungsdienst passen. Die Einstellungen
+ihre...
+
+### E-Mail #2
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSUHegAAA=
+**Von**: 3D Farmers <contact@3d-farmers.com>
+**Betreff**: Order #3D-2763 confirmed
+**Empfangen**: 2026-03-13T20:23:27Z
+**Wichtigkeit**: normal
+**Vorschau**: Order #3D-2763
+Thank you for your purchase!
+
+We're getting your order ready to be shipped. We will notify you when it has been sent.
+
+Download PDF Receipt
+
+
+View your order
+or Visit our store
+Order summary
+
+FarmLoop Stage 2 Kit - H Series (Pre...
+
+*[Gelernt: Betreff enthält 'order']*
+
+### E-Mail #3
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSUHeeAAA=
+**Von**: LinkedIn <updates-noreply@linkedin.com>
+**Betreff**: Maximilian Gürke und andere teilen ihre Standpunkte und Ideen auf LinkedIn
+**Empfangen**: 2026-03-13T19:50:50Z
+**Wichtigkeit**: normal
+**Vorschau**: Ich habe kein Geld. Kein Investoren-Netzwerk. Keine Connections in der…
+͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ...
+
+### E-Mail #4
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSSS_fAAA=
+**Von**: cloudflare-workers-and-pages[bot] <notifications@github.com>
+**Betreff**: Re: [binary-factory/bellicon-ui-nuxt3] Update name in Wrangler configuration file to match deployed Worker (PR #221)
+**Empfangen**: 2026-03-13T19:02:14Z
+**Wichtigkeit**: normal
+**Vorschau**: cloudflare-workers-and-pages[bot] left a comment (binary-factory/bellicon-ui-nuxt3#221)
+Deploying bellicon-ui-preview with    Cloudflare Pages
+Latest commit:  088ca61
+Status: 🚫  Build failed.
+
+View logs
+
+—
+Reply to this email directly, view it on...
+
+### E-Mail #5
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSSS_eAAA=
+**Von**: Domenico Pata <notifications@github.com>
+**Betreff**: [binary-factory/bellicon-ui-nuxt3] Run failed: Deploy - main (0e87a5b)
+**Empfangen**: 2026-03-13T18:57:47Z
+**Wichtigkeit**: normal
+**Vorschau**: [binary-factory/bellicon-ui-nuxt3] Deploy workflow run
+
+
+
+Deploy: Some jobs were not successful
+
+View workflow run
+
+Status  Job     Annotations
+
+
+Deploy / Generate
+Succeeded in 6 minutes and 23 seconds
+
+ 1
+
+
+Deploy / Deploy to Cloudfl...
+
+
+## Antwortformat (JSON)
+
+```json
+{
+  "decisions": [
+    {
+      "mail_id": "...",
+      "mail_index": 1,
+      "category": "important",
+      "action": "move",
+      "action_params": {"folder": "Wichtig"},
+      "reasoning": "Direkt an dich adressiert, Kundenanfrage",
+      "confidence": 0.9
+    }
+  ]
+}
+```
+
+Gib nur das JSON zurück, keine Erklärungen davor oder danach.

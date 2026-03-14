@@ -89,7 +89,7 @@ def process_feedback(feedback_text, batch_timestamp=None):
         }
         
         feedback_entry['parsed_rules'].append(new_rule)
-        print(f"✓ Feedback: Mail #{mail_index} sollte "{category}" sein")
+        print(f'✓ Feedback: Mail #{mail_index} sollte "{category}" sein')
     
     # Pattern 3: "{email} always {category}"
     # e.g., "newsletter@tech.de always newsletter"
@@ -132,7 +132,7 @@ def process_feedback(feedback_text, batch_timestamp=None):
             rules['content_rules'].append(new_rule)
         
         feedback_entry['parsed_rules'].append(new_rule)
-        print(f"✓ Gelernt: "{keyword}" → immer {action}")
+        print(f'✓ Gelernt: "{keyword}" → immer {action}')
     
     else:
         print(f"? Feedback nicht erkannt: {feedback_text}")

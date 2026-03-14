@@ -1,0 +1,1565 @@
+Du bist ein intelligenter E-Mail-Assistent. Analysiere die folgenden E-Mails und kategorisiere sie.
+
+## Deine Aufgabe
+
+Für jede E-Mail entscheide:
+1. **Kategorie**: important / newsletter / invoice / info / spam
+2. **Aktion**: move / mark_read / forward / none
+3. **Begründung**: Warum diese Entscheidung?
+
+## Kategorien
+
+- **important**: Direkt an dich adressiert, Handlungsbedarf, Kunden, Partner
+- **newsletter**: Massenmails, Marketing, automatisierte Updates
+- **invoice**: Rechnungen, Zahlungsaufforderungen
+- **info**: FYI-Mails ohne Handlungsbedarf
+- **spam**: Unsolicited, irrelevant
+
+## Aktionen
+
+- **move**: In entsprechenden Ordner verschieben
+- **mark_read**: Als gelesen markieren (bei Newsletters)
+- **forward**: Weiterleiten (bei Rechnungen)
+- **none**: Keine Aktion
+
+## Gelernte Regeln (beachten)
+
+
+**Bekannte Absender:**
+- updates-noreply@linkedin.com → newsletter
+
+**Betreff-Muster:**
+- "order" → forward
+- "rechnung" → forward
+- "invoice" → forward
+
+## Zu verarbeitende E-Mails
+
+
+### E-Mail #1
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSZRrCAAA=
+**Von**: Vergabemarktplatz Baden-Württemberg <vergabe.landbw.de@cosinex.de>
+**Betreff**: Neue Aufträge für Ihr Unternehmen (13.03.2026)
+**Empfangen**: 2026-03-13T22:21:18Z
+**Wichtigkeit**: normal
+**Vorschau**: Neue Aufträge für Ihr Unternehmen (13.03.2026)
+
+Guten Tag Domenico Pata,
+
+auf https://ausschreibungen.landbw.de/Center/ gibt es neue Bekanntmachung(en), die zu Ihren
+Suchprofilen mit aktiviertem Benachrichtigungsdienst passen. Die Einstellungen
+ihre...
+
+### E-Mail #2
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSUHegAAA=
+**Von**: 3D Farmers <contact@3d-farmers.com>
+**Betreff**: Order #3D-2763 confirmed
+**Empfangen**: 2026-03-13T20:23:27Z
+**Wichtigkeit**: normal
+**Vorschau**: Order #3D-2763
+Thank you for your purchase!
+
+We're getting your order ready to be shipped. We will notify you when it has been sent.
+
+Download PDF Receipt
+
+
+View your order
+or Visit our store
+Order summary
+
+FarmLoop Stage 2 Kit - H Series (Pre...
+
+*[Gelernt: Betreff enthält 'order']*
+
+### E-Mail #3
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSUHeeAAA=
+**Von**: LinkedIn <updates-noreply@linkedin.com>
+**Betreff**: Maximilian Gürke und andere teilen ihre Standpunkte und Ideen auf LinkedIn
+**Empfangen**: 2026-03-13T19:50:50Z
+**Wichtigkeit**: normal
+**Vorschau**: Ich habe kein Geld. Kein Investoren-Netzwerk. Keine Connections in der…
+͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ...
+
+### E-Mail #4
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSSS_fAAA=
+**Von**: cloudflare-workers-and-pages[bot] <notifications@github.com>
+**Betreff**: Re: [binary-factory/bellicon-ui-nuxt3] Update name in Wrangler configuration file to match deployed Worker (PR #221)
+**Empfangen**: 2026-03-13T19:02:14Z
+**Wichtigkeit**: normal
+**Vorschau**: cloudflare-workers-and-pages[bot] left a comment (binary-factory/bellicon-ui-nuxt3#221)
+Deploying bellicon-ui-preview with    Cloudflare Pages
+Latest commit:  088ca61
+Status: 🚫  Build failed.
+
+View logs
+
+—
+Reply to this email directly, view it on...
+
+### E-Mail #5
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSSS_eAAA=
+**Von**: Domenico Pata <notifications@github.com>
+**Betreff**: [binary-factory/bellicon-ui-nuxt3] Run failed: Deploy - main (0e87a5b)
+**Empfangen**: 2026-03-13T18:57:47Z
+**Wichtigkeit**: normal
+**Vorschau**: [binary-factory/bellicon-ui-nuxt3] Deploy workflow run
+
+
+
+Deploy: Some jobs were not successful
+
+View workflow run
+
+Status  Job     Annotations
+
+
+Deploy / Generate
+Succeeded in 6 minutes and 23 seconds
+
+ 1
+
+
+Deploy / Deploy to Cloudfl...
+
+### E-Mail #6
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSSS_dAAA=
+**Von**: coderabbitai[bot] <notifications@github.com>
+**Betreff**: Re: [binary-factory/bellicon-ui-nuxt3] Update name in Wrangler configuration file to match deployed Worker (PR #221)
+**Empfangen**: 2026-03-13T18:56:47Z
+**Wichtigkeit**: normal
+**Vorschau**: coderabbitai[bot] left a comment (binary-factory/bellicon-ui-nuxt3#221)
+
+Important
+
+Review skipped
+
+Bot user detected.
+
+To trigger a single review, invoke the @coderabbitai review command.
+
+⚙️ Run configuration
+
+Configuration used: Organizatio...
+
+### E-Mail #7
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSSS_cAAA=
+**Von**: cloudflare-workers-and-pages[bot] <notifications@github.com>
+**Betreff**: [binary-factory/bellicon-ui-nuxt3] Update name in Wrangler configuration file to match deployed Worker (PR #221)
+**Empfangen**: 2026-03-13T18:56:36Z
+**Wichtigkeit**: normal
+**Vorschau**: The Worker name in your Wrangler configuration file does not match the name of the deployed Worker in the Cloudflare Dashboard.
+Cloudflare automatically generated this PR to resolve the mismatch and avoid inconsistencies between environments. For more in...
+
+### E-Mail #8
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbrAAA=
+**Von**: Domenico Pata <notifications@github.com>
+**Betreff**: [binary-factory/bellicon-ui-nuxt3] Run failed: Deploy - dev (4c36b8b)
+**Empfangen**: 2026-03-13T17:29:34Z
+**Wichtigkeit**: normal
+**Vorschau**: [binary-factory/bellicon-ui-nuxt3] Deploy workflow run
+
+
+
+Deploy: Some jobs were not successful
+
+View workflow run
+
+Status  Job     Annotations
+
+
+Deploy / Build
+Succeeded in 6 minutes and 46 seconds
+
+ 2
+
+
+Deploy / Generate
+Failed in ...
+
+### E-Mail #9
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbqAAA=
+**Von**: LinkedIn <messages-noreply@linkedin.com>
+**Betreff**: Sehen Sie sich den Beitrag von Thomas Maas und Ihre nächsten Schritte an
+**Empfangen**: 2026-03-13T17:13:10Z
+**Wichtigkeit**: normal
+**Vorschau**: Projektbasiertes…
+͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏...
+
+### E-Mail #10
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbpAAA=
+**Von**: Domenico Pata <notifications@github.com>
+**Betreff**: [binary-factory/bellicon-ui-nuxt3] Run failed: CI - dev (d460ea0)
+**Empfangen**: 2026-03-13T17:11:58Z
+**Wichtigkeit**: normal
+**Vorschau**: [binary-factory/bellicon-ui-nuxt3] CI workflow run
+
+
+
+CI: All jobs have failed
+
+View workflow run
+
+Status  Job     Annotations
+
+
+CI / Build Check
+Failed in 1 minute and 35 seconds
+
+ 2
+
+
+
+—
+You are receiving this because you are subs...
+
+### E-Mail #11
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIboAAA=
+**Von**: Domenico Pata <notifications@github.com>
+**Betreff**: [binary-factory/bellicon-ui-nuxt3] Run failed: Deploy - dev (d460ea0)
+**Empfangen**: 2026-03-13T17:11:54Z
+**Wichtigkeit**: normal
+**Vorschau**: [binary-factory/bellicon-ui-nuxt3] Deploy workflow run
+
+
+
+Deploy: Some jobs were not successful
+
+View workflow run
+
+Status  Job     Annotations
+
+
+Deploy / Build
+Failed in 1 minute and 31 seconds
+
+ 2
+
+
+Deploy / Generate
+Skipped...
+
+### E-Mail #12
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbnAAA=
+**Von**: Meta for Business <noreply@business-updates.facebook.com>
+**Betreff**: Deine Werbeanzeige wurde genehmigt
+**Empfangen**: 2026-03-13T16:52:30Z
+**Wichtigkeit**: normal
+**Vorschau**: Deine Werbeanzeige wurde genehmigt und sollte in Kürze ausgeliefert werden bzw. ab dem Startdatum, das du festgelegt hast.  ‌
+Deine Werbeanzeige wurde genehmigt
+Hallo Domenico Pata,
+
+Deine Werbeanzeige wurde genehmigt und sollte schon bald Ergebnisse ...
+
+### E-Mail #13
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbmAAA=
+**Von**: Quandoo No-reply <no-reply-de@quandoo.com>
+**Betreff**: ✅ Ihre Reservierung bei Colina Steakhaus ist bestätigt
+**Empfangen**: 2026-03-13T16:22:05Z
+**Wichtigkeit**: normal
+**Vorschau**: Guten Tag, freuen Sie sich auf Ihren Restaurantbesuch!  ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌...
+
+### E-Mail #14
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIblAAA=
+**Von**: Reserve with Google <reserve-noreply@google.com>
+**Betreff**: Your reservation at Colina Steakhaus Restaurant is confirmed
+**Empfangen**: 2026-03-13T16:17:08Z
+**Wichtigkeit**: normal
+**Vorschau**: Reservation confirmed
+View reservation
+14
+Mar
+Colina Steakhaus Restaurant
+Upcoming reservation
+Reservation for 8
+Sat · 19:00 (CET)
+Call
+Calendar
+Modify
+Cancel
+
+Flandrische Straße 18,
+Köln,
+NRW 50674, DE
+Get directions
+        Argentinian ...
+
+### E-Mail #15
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbkAAA=
+**Von**: Domenico Pata <notifications@github.com>
+**Betreff**: [binary-factory/bellicon-ui-nuxt3] Run failed: nuxt static build - main (25cd6a4)
+**Empfangen**: 2026-03-13T16:10:07Z
+**Wichtigkeit**: normal
+**Vorschau**: [binary-factory/bellicon-ui-nuxt3] nuxt static build workflow run
+
+
+
+nuxt static build: All jobs have failed
+
+View workflow run
+
+Status  Job     Annotations
+
+
+nuxt static build / generate
+Failed in 5 seconds
+
+ 2
+
+
+
+—
+You are receivi...
+
+### E-Mail #16
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbiAAA=
+**Von**: TikTok For Business <marketing-api@ads-service.tiktok.com>
+**Betreff**: Weekly Update From TikTok For Business Developers
+**Empfangen**: 2026-03-13T12:16:23Z
+**Wichtigkeit**: normal
+**Vorschau**: API for Business
+
+Weekly Update
+
+API for Business
+
+Weekly Update
+
+Mar 13th, 2026
+
+
+
+
+Product & Doc Updates
+
+Campaign Management
+
+
+
+Catalog Media Settings and Spark Ads for E-commerce Catalog Creatives for Upgraded Smart+
+We have enhanc...
+
+### E-Mail #17
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbhAAA=
+**Von**: Meta for Business <noreply@business-updates.facebook.com>
+**Betreff**: Deine Werbeanzeigen wurden genehmigt
+**Empfangen**: 2026-03-13T11:36:10Z
+**Wichtigkeit**: normal
+**Vorschau**: Deine Werbeanzeigen wurden genehmigt und sollten in Kürze ausgeliefert werden bzw. ab dem Startdatum, das du festgelegt hast.  ‌
+Deine Werbeanzeigen wurden genehmigt
+Hallo Domenico Pata,
+
+Deine Werbeanzeigen wurden genehmigt und sollten schon bald Erg...
+
+### E-Mail #18
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbgAAA=
+**Von**: LinkedIn <messages-noreply@linkedin.com>
+**Betreff**: Domenico, folgen Sie Joachim Gemmel, CEO | Asklepios Kliniken GmbH & Co. KGaA bei Asklepios
+**Empfangen**: 2026-03-13T11:12:44Z
+**Wichtigkeit**: normal
+**Vorschau**: Sehen Sie Ihre Empfehlungen, Domenico
+͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏  ͏ ͏ ͏ ...
+
+### E-Mail #19
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbaAAA=
+**Von**: keval@ecodesoft.com <keval@ecodesoft.com>
+**Betreff**: Dev partnership with binary-factory
+**Empfangen**: 2026-03-13T07:02:18Z
+**Wichtigkeit**: normal
+**Vorschau**: Hi Domenico,
+I was looking at agile software development and native app development at binary-factory.
+Honestly, most agencies we talk to run into the same thing. Work starts picking up, the team gets stretched, and hiring someone full time just does no...
+
+### E-Mail #20
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRRFh3AAA=
+**Von**: LinkedIn Ads <linkedin@em.linkedin.com>
+**Betreff**: Domenico, 200 € EUR ausgeben und Anzeigenbudget verdoppeln
+**Empfangen**: 2026-03-12T08:25:04Z
+**Wichtigkeit**: normal
+**Vorschau**: Verdoppeln Sie Ihr LinkedIn Anzeigenbudget kostenlos  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ͏  ...
+
+### E-Mail #21
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANPLZjuAAA=
+**Von**: The CodeRabbit Team <hello@coderabbit.ai>
+**Betreff**: NEW: CodeRabbit CLI now has no limits - here’s how it works
+**Empfangen**: 2026-03-11T17:21:21Z
+**Wichtigkeit**: normal
+**Vorschau**: CodeRabbit CLI just got a major upgrade. You can now run unlimited reviews using usage-based credits – perfect for agentic coding loops with Claude Code, Codex, and more.
+
+Whether you are iterating locally or powering CI workflows, you now have comp...
+
+### E-Mail #22
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANPLfxvAAA=
+**Von**: BIQU/BIGTREETECH <info@biqu.equipment>
+**Betreff**: Every order has a beginning – This is ours❤️
+**Empfangen**: 2026-03-09T11:11:29Z
+**Wichtigkeit**: normal
+**Vorschau**: We’re so happy to have you with us. Here’s how BIQU started—from a classroom spark to the world of 3D printing.
+
+͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ...
+
+*[Gelernt: Betreff enthält 'order']*
+
+### E-Mail #23
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANPLfxuAAA=
+**Von**: Volkswagen News <news@vwpkw.volkswagen-online.de>
+**Betreff**: Domenico Pata, jetzt Termin für den Räderwechsel sichern.
+**Empfangen**: 2026-03-09T10:57:17Z
+**Wichtigkeit**: normal
+**Vorschau**: Reifenwechsel einfach planen – jetzt beim Partnerbetrieb anfragen. ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏ ‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏‌ ͏...
+
+### E-Mail #24
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANO3OOTAAA=
+**Von**: H. from OpenClaw Setup <openclawsetup@zavata.ai>
+**Betreff**: Entire team on Slack?
+**Empfangen**: 2026-03-08T19:01:27Z
+**Wichtigkeit**: normal
+**Vorschau**: <!doctype html>
+<html>
+    <head>
+        <title>Entire team on Slack?</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">...
+
+### E-Mail #25
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANO3OOSAAA=
+**Von**: Adventure Meter Department <bellamy@extremityentertainment.com>
+**Betreff**: Thanks for your feedback
+**Empfangen**: 2026-03-08T15:26:57Z
+**Wichtigkeit**: normal
+**Vorschau**: We've received your response and will use it to improve.
+​
+feedback noted...
+
+### E-Mail #26
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANOtRYAAAA=
+**Von**: BIQU/BIGTREETECH <info@biqu.equipment>
+**Betreff**: Welcome to BIQU/BIGTREETECH
+**Empfangen**: 2026-03-08T11:11:26Z
+**Wichtigkeit**: normal
+**Vorschau**: Claim Special Offers Now
+
+͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏...
+
+### E-Mail #27
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANNQOh9AAA=
+**Von**: H. from OpenClaw Setup <openclawsetup@vibehackai.com>
+**Betreff**: Re: Your AI team deployment
+**Empfangen**: 2026-03-06T18:59:55Z
+**Wichtigkeit**: normal
+**Vorschau**: <!doctype html>
+<html>
+    <head>
+        <title>Re: Your AI team deployment</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale...
+
+### E-Mail #28
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANL1d2JAAA=
+**Von**: H. from OpenClaw Setup <openclawsetup@clawdbotstudio.com>
+**Betreff**: AI agent running by tonight?
+**Empfangen**: 2026-03-04T17:51:50Z
+**Wichtigkeit**: normal
+**Vorschau**: <!doctype html>
+<html>
+    <head>
+        <title>AI agent running by tonight?</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scal...
+
+### E-Mail #29
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANFQjt5AAA=
+**Von**: Alexander Heeg <alexander@heegconsulting-berlin.com>
+**Betreff**: Re: FineVoices / App Entwicklung
+**Empfangen**: 2026-02-24T14:26:20Z
+**Wichtigkeit**: normal
+**Vorschau**: Moin Domenico,
+
+bin mir sicher, du hast viel um die Ohren und wollte nur sichergehen, dass das nicht untergegangen ist.  Was sind deine Gedanken zum Video?
+
+LG Alex
+
+Heeg Consulting GmbH
+Richthofenstr. 7, 27356 Rotenburg
+
+Amtsgericht Berlin Charl...
+
+### E-Mail #30
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANDL9c7AAA=
+**Von**: James Cameron <topmobilappdevelopment@outlook.com>
+**Betreff**: Re: Web Quotation
+**Empfangen**: 2026-02-19T02:36:15Z
+**Wichtigkeit**: normal
+**Vorschau**: Greeting Binary-Factory Gmbh,
+
+I sent you an email few days ago regarding your website development. In case my last email happened to slip by you. It’s not urgent, but I would love to hear your thoughts on it when you have a moment.
+
+Thanks
+James Cam...
+
+### E-Mail #31
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANA-FHpAAA=
+**Von**: Alexander Heeg <alexander@heegconsulting-berlin.com>
+**Betreff**: FineVoices / App Entwicklung
+**Empfangen**: 2026-02-17T14:25:44Z
+**Wichtigkeit**: normal
+**Vorschau**: Hallo Domenico,
+
+weil ihr Kunden wie FineVoices habt & App-Entwicklung anbietet, habe ich eine Idee, wie ihr neben Empfehlungen / Vitamin B planbar & replizierbar Kunden gewinnen könnt, ohne teure Ads, nerviges Cold Calling etc.
+
+Je nachdem, wie es "u...
+
+### E-Mail #32
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANA-FHoAAA=
+**Von**: Dimitri Miller <d.miller@group-miller.com>
+**Betreff**: System Engineer (AD, Exchange, VMware, Veeam) aus Köln – 15+ Jahre – ID 294846
+**Empfangen**: 2026-02-17T13:32:28Z
+**Wichtigkeit**: normal
+**Vorschau**: Sehr geehrter Herr Pata,
+
+ich möchte Ihnen einen erfahrenen System Engineer mit Schwerpunkt Microsoft-Infrastruktur, Active Directory, Exchange und Virtualisierung vorstellen. Er verantwortet den Neuaufbau von AD-Multi-Forest-Strukturen inkl. PKI und IA...
+
+### E-Mail #33
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANA-FHnAAA=
+**Von**: Creditreform Köln Marketing <marketing@mail.creditreform-koeln.de>
+**Betreff**: Letzte Chance: Nur noch 10 freie Plätze für das Webinar „Finanzielle Schwierigkeiten bei Geschäftspartnern frühzeitig erkennen“
+**Empfangen**: 2026-02-17T13:03:49Z
+**Wichtigkeit**: normal
+**Vorschau**: Jetzt kostenfrei zu unserem Webinar anmelden!
+Lieber Herr Pata,
+
+wir haben nur noch 10 freie Plätze für unser Online-Webinar „Finanzielle Schwierigkeiten bei Geschäftspartnern frühzeitig erkennen".
+
+Themen des Webinars werden u.a. sein:
+
+  *   Anze...
+
+### E-Mail #34
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AAM-ImHiAAA=
+**Von**: Marie-Isabelle Schönborn <marieisabelleschoenborn@secfixglobal.com>
+**Betreff**: Re: ISO 27001 bei binary-factory: Türöffner für neue Ausschreibungen
+**Empfangen**: 2026-02-13T09:24:42Z
+**Wichtigkeit**: normal
+**Vorschau**: Lieber Herr Pata,
+
+da ich bisher nichts von Ihnen gehört habe, gehe ich davon aus, dass das Thema ISO 27001 bei Ihnen aktuell keine Priorität hat. Das ist natürlich völlig in Ordnung.
+
+Falls sich die Anforderungen Ihrer Kunden ändern oder Sie in Zukun...
+
+### E-Mail #35
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AAM-ImHhAAA=
+**Von**: Nisha <nm37khan37@gmail.com>
+**Betreff**: Re- Mobile, App Solutions
+**Empfangen**: 2026-02-13T07:17:38Z
+**Wichtigkeit**: normal
+**Vorschau**: Hi binary,
+
+I wanted to reach out again regarding your website needs. If you’re considering redesigning or building a new App, we have a range of solutions to offer.
+I’d be happy to send over our portfolio and discuss how we can assist you.
+
+I look f...
+
+### E-Mail #36
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAI_kcy2AAA=
+**Von**: Daniel May <daniel.k.may@canopygrowth.com>
+**Betreff**: TWEED UPDATE
+**Empfangen**: 2025-01-22T07:59:23Z
+**Wichtigkeit**: normal
+**Vorschau**: ________________________________________________________________________________
+Microsoft Teams Need help?
+Join the meeting now
+Meeting ID: 223 980 144 059
+Passcode: ww3rK97Z
+________________________________
+Dial in by phone
++1 437-703-5381,,588...
+
+### E-Mail #37
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAI_kcy0AAA=
+**Von**: Daniel May <daniel.k.may@canopygrowth.com>
+**Betreff**: TWEED UPDATE
+**Empfangen**: 2025-01-20T13:45:32Z
+**Wichtigkeit**: normal
+**Vorschau**: ...
+
+### E-Mail #38
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIfFopcAAA=
+**Von**: Daniel May <daniel.k.may@canopygrowth.com>
+**Betreff**: Accepted: Produkt tempalte tweed
+**Empfangen**: 2024-12-05T08:17:42Z
+**Wichtigkeit**: normal
+**Vorschau**: ...
+
+### E-Mail #39
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIfFopdAAA=
+**Von**: Daniel May <daniel.k.may@canopygrowth.com>
+**Betreff**: Accepted: Produkt tempalte tweed
+**Empfangen**: 2024-12-05T08:17:42Z
+**Wichtigkeit**: normal
+**Vorschau**: ...
+
+### E-Mail #40
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIfFopbAAA=
+**Von**: Daniel May <daniel.k.may@canopygrowth.com>
+**Betreff**: Accepted: Produkt tempalte tweed
+**Empfangen**: 2024-12-05T08:17:41Z
+**Wichtigkeit**: normal
+**Vorschau**: ...
+
+### E-Mail #41
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIPS5EhAAA=
+**Von**: Daniel May <daniel.k.may@canopygrowth.com>
+**Betreff**: Tweed Shop
+**Empfangen**: 2024-11-12T11:15:29Z
+**Wichtigkeit**: normal
+**Vorschau**: ________________________________________________________________________________
+Microsoft Teams Need help?
+Join the meeting now
+Meeting ID: 219 961 710 691
+Passcode: kJzpB7
+________________________________
+Dial in by phone
++1 437-703-5381,,74850...
+
+### E-Mail #42
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIMgs-yAAA=
+**Von**: Daniel May <daniel.k.may@canopygrowth.com>
+**Betreff**: Canopy x Binary 
+**Empfangen**: 2024-11-07T06:12:53Z
+**Wichtigkeit**: normal
+**Vorschau**: Sorry grade gemerkt das es auf den selben TAg verschiben wurde! Sorry!
+
+________________________________________________________________________________
+Microsoft Teams Need help?
+Join the meeting now
+Meeting ID: 224 981 872 634
+Passcode: i4Ur7K
+__...
+
+### E-Mail #43
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIMgs-xAAA=
+**Von**: Daniel May <daniel.k.may@canopygrowth.com>
+**Betreff**: Canopy x Binary 
+**Empfangen**: 2024-11-06T13:29:49Z
+**Wichtigkeit**: normal
+**Vorschau**: Sorry grade gemerkt das es auf den selben TAg verschiben wurde! Sorry!
+
+________________________________________________________________________________
+Microsoft Teams Need help?
+Join the meeting now
+Meeting ID: 224 981 872 634
+Passcode: i4Ur7K
+__...
+
+### E-Mail #44
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIKkfxtAAA=
+**Von**: Daniel May <daniel.k.may@canopygrowth.com>
+**Betreff**: Canopy x Binary 
+**Empfangen**: 2024-11-04T06:24:34Z
+**Wichtigkeit**: normal
+**Vorschau**: leider krank! muss es verschieben
+
+________________________________________________________________________________
+Microsoft Teams Need help?
+Join the meeting now
+Meeting ID: 224 981 872 634
+Passcode: i4Ur7K
+________________________________
+Dial ...
+
+### E-Mail #45
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIHyE4KAAA=
+**Von**: Domenico Pata <d.pata@binary-factory.de>
+**Betreff**: Benachrichtigung über Besprechungsweiterleitung: Teams-Besprechung
+**Empfangen**: 2024-10-30T19:57:42Z
+**Wichtigkeit**: normal
+**Vorschau**: Ihre Besprechung wurde weitergeleitet
+
+Domenico Pata  hat Ihre Besprechungsanfrage an weitere Empfänger weitergeleitet.
+
+        Besprechung
+        Teams-Besprechung
+
+        Besprechungszeit
+        Mittwoch, 30. Oktober 2024 21:00-22:00.
+
+   ...
+
+### E-Mail #46
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIKkfxsAAA=
+**Von**: Daniel May <daniel.k.may@canopygrowth.com>
+**Betreff**: Canopy x Binary 
+**Empfangen**: 2024-10-30T08:55:12Z
+**Wichtigkeit**: normal
+**Vorschau**: ________________________________________________________________________________
+Microsoft Teams Need help?
+Join the meeting now
+Meeting ID: 224 981 872 634
+Passcode: i4Ur7K
+________________________________
+Dial in by phone
++1 437-703-5381,,827...
+
+### E-Mail #47
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAH9q56xAAA=
+**Von**: Daniel May <daniel.k.may@canopygrowth.com>
+**Betreff**: Canopy x Binary
+**Empfangen**: 2024-10-28T13:31:35Z
+**Wichtigkeit**: normal
+**Vorschau**: Hey Domenico
+Muss den Termin leider verschieben. Stecke im stau und werde es so wie es aussieht nicht schaffen
+
+Gruss
+Daniel
+
+
+________________________________________________________________________________
+Microsoft Teams Need help?
+Join the me...
+
+### E-Mail #48
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAH9q56wAAA=
+**Von**: Daniel May <daniel.k.may@canopygrowth.com>
+**Betreff**: Canopy x Binary
+**Empfangen**: 2024-10-25T11:34:16Z
+**Wichtigkeit**: normal
+**Vorschau**: Hey Domenico
+Muss den Termin leider verschieben. Stecke im stau und werde es so wie es aussieht nicht schaffen
+
+Gruss
+Daniel
+
+
+________________________________________________________________________________
+Microsoft Teams Need help?
+Join the me...
+
+### E-Mail #49
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAH9q56uAAA=
+**Von**: Daniel May <daniel.k.may@canopygrowth.com>
+**Betreff**: Canopy x Binary
+**Empfangen**: 2024-10-22T16:10:09Z
+**Wichtigkeit**: normal
+**Vorschau**: Hey Domenico
+Muss den Termin leider verschieben. Muss leider was Privat klären.
+
+Gruss
+Daniel
+
+
+________________________________________________________________________________
+Microsoft Teams Need help?
+Join the meeting now
+Meeting ID: 234 178 ...
+
+### E-Mail #50
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAHiMkzBAAA=
+**Von**: Tim Schlöder <ts@slash.digital>
+**Betreff**: Absprache Slash.digital
+**Empfangen**: 2024-09-04T11:55:45Z
+**Wichtigkeit**: normal
+**Vorschau**: ________________________________________________________________________________
+Microsoft Teams Benötigen Sie Hilfe?
+Jetzt an der Besprechung teilnehmen
+Besprechungs-ID: 390 747 581 030
+Kennung: s5iq3c
+________________________________
+Für Organis...
+
+### E-Mail #51
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAFNNU5uAAA=
+**Von**: Gil Baxpehler <gil.baxpehler@koeln.business>
+**Betreff**: IKT Meetup 
+**Empfangen**: 2023-12-21T10:48:47Z
+**Wichtigkeit**: normal
+**Vorschau**: Hallo zusammen,
+
+Wir würden das IKT Meetup gerne wiederbeleben und auch langfristig ausrichten.
+
+Dafür würden wir euch gerne zu uns einladen, um in angenehmer Atmosphäre die Zukunft des Meetup gemeinsam zu besprechen.
+
+Mein Vorschlag wäre, dass wir ...
+
+### E-Mail #52
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3giAAA=
+**Von**: kundenservice-rechnungonline@telekom.de <kundenservice-rechnungonline@telekom.de>
+**Betreff**: Ihre Telekom Mobilfunk RechnungOnline GK April 2023 (Adresse: Aachener Str. 60-62, Kundenkonto: 0062964611)
+**Empfangen**: 2023-05-05T15:49:14Z
+**Wichtigkeit**: normal
+**Vorschau**: Sehr geehrte Kundin,
+sehr geehrter Kunde,
+
+für die Adresse Aachener Str. 60-62, Kundenkonto 0062964611 erhalten Sie mit dieser E-Mail Ihre aktuelle Mobilfunk-Rechnung.
+
+Rechnung 13414779012521 vom 05.05.2023 für April 2023, Betrag: 155,71 EUR.
+
+Dur...
+
+*[Gelernt: Betreff enthält 'rechnung']*
+
+### E-Mail #53
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3gvAAA=
+**Von**: kundenservice-rechnungonline@telekom.de <kundenservice-rechnungonline@telekom.de>
+**Betreff**: Ihre Telekom Mobilfunk RechnungOnline GK März 2023 (Adresse: Aachener Str. 60-62, Kundenkonto: 0062964611)
+**Empfangen**: 2023-04-06T17:47:10Z
+**Wichtigkeit**: normal
+**Vorschau**: Sehr geehrte Kundin,
+sehr geehrter Kunde,
+
+für die Adresse Aachener Str. 60-62, Kundenkonto 0062964611 erhalten Sie mit dieser E-Mail Ihre aktuelle Mobilfunk-Rechnung.
+
+Rechnung 13362627012521 vom 06.04.2023 für März 2023, Betrag: 160,26 EUR.
+
+Durc...
+
+*[Gelernt: Betreff enthält 'rechnung']*
+
+### E-Mail #54
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3hYAAA=
+**Von**: kundenservice-rechnungonline@telekom.de <kundenservice-rechnungonline@telekom.de>
+**Betreff**: Ihre Telekom Mobilfunk RechnungOnline GK Januar 2023 (Adresse: Aachener Str. 60-62, Kundenkonto: 0062964611)
+**Empfangen**: 2023-02-15T16:15:35Z
+**Wichtigkeit**: normal
+**Vorschau**: Sehr geehrte Kundin,
+sehr geehrter Kunde,
+
+für die Adresse Aachener Str. 60-62, Kundenkonto 0062964611 erhalten Sie mit dieser E-Mail Ihre aktuelle Mobilfunk-Rechnung.
+
+Rechnung 13153078012521 vom 15.02.2023 für Januar 2023, Betrag: 160,26 Euro.
+
+D...
+
+*[Gelernt: Betreff enthält 'rechnung']*
+
+### E-Mail #55
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJJAAA=
+**Von**: Laufenberg Michels und Partner mbB <newsletter@laufmich.de>
+**Betreff**: Steuerliche Änderungen in der Gehaltsabrechnung für 2022
+**Empfangen**: 2023-02-02T14:49:08Z
+**Wichtigkeit**: normal
+**Vorschau**: WICHTIGE INFORMATIONEN
+
+
+
+Steuerliche Änderungen
+in der Gehaltsabrechnung
+für 2023
+
+Sehr geehrter Herr Haase,
+
+der Jahreswechsel bringt in jedem Jahr einige Änderungen und Neuregelungen im Steuer- und Sozialversicherungsrecht mit sich. Wir m...
+
+*[Gelernt: Betreff enthält 'rechnung']*
+
+### E-Mail #56
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJQAAA=
+**Von**: Dropbox <dropboxmail@dropbox.com>
+**Betreff**: Aktualisierung unserer Allgemeinen Geschäftsbedingungen und unserer Datenschutzrichtlinie
+**Empfangen**: 2023-01-27T12:12:16Z
+**Wichtigkeit**: normal
+**Vorschau**: Hallo Oliver Haase,
+Wir arbeiten unentwegt daran, das Arbeiten mit Dropbox so angenehm wie möglich zu machen und unser Feature-Angebot zu erweitern. In den vergangenen paar Jahren haben wir HelloSign – heute Dropbox Sign – und DocSend in die Dropbox-Fami...
+
+### E-Mail #57
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJTAAA=
+**Von**: Apple Business Team <rheincenterbusiness@email.apple.com>
+**Betreff**: MacBook Pro. Mehr Power fürs Business.
+**Empfangen**: 2023-01-26T06:52:02Z
+**Wichtigkeit**: normal
+**Vorschau**: Steigern Sie die Produktivität Ihres Teams.
+
+Das MacBook Pro liefert eine außergewöhnliche Performance. Sie haben die Auswahl zwischen dem leistungsstarken M2 Pro Chip und dem M2 Max mit noch mehr Power für Ihr Business.
+
+Holen Sie sich eine großartig...
+
+### E-Mail #58
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJVAAA=
+**Von**: VMware <de-events@vmware.com>
+**Betreff**: Live-Webinar: Essentielle Funktionen für eine schnelle Wiederherstellung nach Ransomware-Angriffen
+**Empfangen**: 2023-01-24T15:20:45Z
+**Wichtigkeit**: normal
+**Vorschau**: Wird diese E-Mail nicht richtig angezeigt? Lesen Sie sie online.
+
+
+
+
+
+
+
+Live-Webinar: Essentielle Funktionen für eine schnelle Wiederherstellung nach Ransomware-Angriffen
+
+Datum: 31. Januar 2023
+Uhrzeit: 13:00 Uhr
+Dauer: 45 Minuten
+
+
+JE...
+
+### E-Mail #59
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJWAAA=
+**Von**: Microsoft-Konto-Team <account-security-noreply@accountprotection.microsoft.com>
+**Betreff**: Sicherheitsbenachrichtigung für Microsoft-Konto
+**Empfangen**: 2023-01-24T12:01:51Z
+**Wichtigkeit**: normal
+**Vorschau**: Microsoft-Konto
+Ihr Konto wird am 25.03.2023 geschlossen.
+Sehr geehrte(r) Oliver,
+Ihr Konto o.**e@binary-factory.de ist aufgrund von Inaktivität zur Schließung am 25.03.2023 vorgesehen. Sobald Ihr Konto geschlossen wurde, wird es gemäß Microsoft-Servic...
+
+### E-Mail #60
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJYAAA=
+**Von**: Logz.io Team <team@logz.io>
+**Betreff**: Not too late! K8s + Logz.io Webinar
+**Empfangen**: 2023-01-23T15:16:23Z
+**Wichtigkeit**: normal
+**Vorschau**: How To Achieve Unified observability with K8s + Logz.io
+
+
+
+
+Join us tomorrow @ 3 PM IST for: Full K8s Observability in Minutes!
+
+
+Learn how to:
+
+  *
+Extend visibility across logs, metrics, and traces in a unified UI
+  *
+Simply and actionably ...
+
+### E-Mail #61
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJcAAA=
+**Von**: Penta <operations@getpenta.com>
+**Betreff**: Dein Zugang zu Penta wurde geschlossen
+**Empfangen**: 2023-01-18T11:56:42Z
+**Wichtigkeit**: normal
+**Vorschau**: Hi OLIVER!
+
+Dein Zugang zu Penta wurde geschlossen und du kannst dich nicht mehr einloggen.
+
+Solltest du eine Penta Debitkarte haben, wurde diese nun geschlossen und kann nicht mehr zum Bezahlen verwendet werden.
+
+Solltest du Fragen haben, m...
+
+### E-Mail #62
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3hvAAA=
+**Von**: kundenservice-rechnungonline@telekom.de <kundenservice-rechnungonline@telekom.de>
+**Betreff**: Ihre Telekom Mobilfunk RechnungOnline GK Dezember 2022 (Adresse: Aachener Str. 60-62, Kundenkonto: 0062964611)
+**Empfangen**: 2023-01-17T16:59:30Z
+**Wichtigkeit**: normal
+**Vorschau**: Sehr geehrte Kundin,
+sehr geehrter Kunde,
+
+für die Adresse Aachener Str. 60-62, Kundenkonto 0062964611 erhalten Sie mit dieser E-Mail Ihre aktuelle Mobilfunk-Rechnung.
+
+Rechnung 13101727012521 vom 17.01.2023 für Dezember 2022, Betrag: 160,26 Euro....
+
+*[Gelernt: Betreff enthält 'rechnung']*
+
+### E-Mail #63
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJeAAA=
+**Von**: Zoey Morck <zoey.morck@logz.io>
+**Betreff**: WEBINAR | Make K8s work harder AND smarter for you
+**Empfangen**: 2023-01-17T14:17:59Z
+**Wichtigkeit**: normal
+**Vorschau**: How To Achieve Unified observability with K8s + Logz.io
+
+
+
+
+
+
+
+How To Achieve Unified observability with K8s + Logz.io
+
+
+Are you ready to work smarter, not harder, in 2023?
+
+Kubernetes is the leading container orchestration technology, but it...
+
+### E-Mail #64
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJfAAA=
+**Von**: VMware <de-events@vmware.com>
+**Betreff**: Live-Webinar: Essentielle Funktionen für eine schnelle Wiederherstellung nach Ransomware-Angriffen
+**Empfangen**: 2023-01-17T12:43:52Z
+**Wichtigkeit**: normal
+**Vorschau**: Wird diese E-Mail nicht richtig angezeigt? Lesen Sie sie online.
+
+
+
+
+
+
+
+Live-Webinar: Essentielle Funktionen für eine schnelle Wiederherstellung nach Ransomware-Angriffen
+
+Datum: 31. Januar 2023
+Uhrzeit: 13:00 Uhr
+Dauer: 45 Minuten
+
+
+JE...
+
+### E-Mail #65
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJiAAA=
+**Von**: HubSpot <noreply@hubspot.com>
+**Betreff**: Ihr kostenloser HubSpot-Account wird in 30 Tag(en) deaktiviert.
+**Empfangen**: 2023-01-15T08:55:10Z
+**Wichtigkeit**: normal
+**Vorschau**: ________________________________
+
+
+Ihr kostenloser HubSpot-Account wird in 30 Tag(en) deaktiviert.
+
+________________________________
+
+
+Offenbar haben Sie sich seit längerer Zeit nicht bei diesem HubSpot-Account angemeldet (Hub-ID: 6491360; Accou...
+
+### E-Mail #66
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJkAAA=
+**Von**: Laufenberg Michels und Partner mbB <newsletter@laufmich.de>
+**Betreff**: Neuerungen bei der Arbeitszeiterfassung 
+**Empfangen**: 2023-01-13T09:00:04Z
+**Wichtigkeit**: normal
+**Vorschau**: WICHTIGE INFORMATIONEN
+
+
+
+
+Neuerungen bei der Arbeitszeiterfassung
+
+Das Thema Arbeitszeiterfassung beschäftigt zur Zeit die Rechtsprechung und Sie als Arbeitgeber haben uns hierzu bereits viele Fragen gestellt. Wie wird in Zukunft die Verpflich...
+
+### E-Mail #67
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJoAAA=
+**Von**: Penta <premiumsupport@getpenta.com>
+**Betreff**: Penta & Qonto: Was das für Dich bedeutet
+**Empfangen**: 2023-01-11T11:54:59Z
+**Wichtigkeit**: normal
+**Vorschau**: Kundeninformation
+Penta & Qonto: Was das für Dich bedeutet
+
+Penta und Qonto haben sich zusammengeschlossen, um Dir eine All-in-one-Finanzlösung zu bieten. Deine Treue als Kunde bedeutet uns viel, deshalb möchten wir Dir erklären, was das für Dich bedeu...
+
+### E-Mail #68
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJtAAA=
+**Von**: POEditor  <noreply@poeditor.com>
+**Betreff**: You've been inactive on POEditor for a while
+**Empfangen**: 2023-01-06T07:43:08Z
+**Wichtigkeit**: normal
+**Vorschau**: Hi Oliver Haase,
+
+It's been a while since you've last accessed your POEditor account.
+Please note that we archive the projects on the accounts that have been inactive for so long.
+
+If you don't want your projects to be archived, just log in to your a...
+
+### E-Mail #69
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3iBAAA=
+**Von**: Penta <operations@getpenta.com>
+**Betreff**: Deine Penta-Rechnung ist da!
+**Empfangen**: 2023-01-02T21:59:24Z
+**Wichtigkeit**: normal
+**Vorschau**: Hi OLIVER!
+
+Deine Penta Rechnung ist da! Du kannst diese ab sofort sowohl in der Web App als auch im Anhang dieser E-Mail finden.
+
+Wir werden den Rechnungsbetrag in Kürze von Deinem Konto abbuchen. Bitte stelle sicher, dass Dein Konto zu die...
+
+*[Gelernt: Betreff enthält 'rechnung']*
+
+### E-Mail #70
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJ2AAA=
+**Von**: The Logz.io Team <team@logz.io>
+**Betreff**: Happy New Year!
+**Empfangen**: 2022-12-28T14:16:00Z
+**Wichtigkeit**: normal
+**Vorschau**: Countdown to 2023!
+
+
+
+
+
+
+
+
+Countdown to 2023!
+
+
+The year is drawing to a close. Are you working hard, setting your resolutions for the new year? Or are you recovering from too many holiday treats? Maybe you’re hiding from a family member who g...
+
+### E-Mail #71
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKAAAA=
+**Von**: Logz.io Team <team@logz.io>
+**Betreff**: Open 360 Demo | On-demand
+**Empfangen**: 2022-12-21T17:33:30Z
+**Wichtigkeit**: normal
+**Vorschau**: Open 360™ Demo On-Demand Now Available!
+
+
+
+
+
+
+
+
+Open 360™ Demo On-Demand Now Available!
+
+
+Last week, we did a deep dive into everything you can accomplish with Open 360:
+
+  *   An out-of-the-box, full stack overview of health and performance...
+
+### E-Mail #72
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKBAAA=
+**Von**: ngrok <team@m.ngrok.com>
+**Betreff**: [ngrok] Product updates: Dashboard SSO, Identity-Aware Ingress
+**Empfangen**: 2022-12-21T15:44:41Z
+**Wichtigkeit**: normal
+**Vorschau**: The last month has been busy at ngrok!
+
+
+
+We’re tremendously proud to announce we’ve raised $50M in funding from Lightspeed Ventures and Coatue to grow ngrok’s API-first ingress as a service platform for developers.
+
+
+
+What’s the tl;dr this month?...
+
+### E-Mail #73
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKFAAA=
+**Von**: Laufenberg Michels und Partner mbB <newsletter@laufmich.de>
+**Betreff**: Neue eAU – neue Herausforderungen für die Arbeitgeber 
+**Empfangen**: 2022-12-20T14:00:21Z
+**Wichtigkeit**: normal
+**Vorschau**: WICHTIGE INFORMATION
+
+
+Neue eAU – neue Herausforderungen
+für die Arbeitgeber
+
+Wie Sie ab 2023 sicherstellen, dass mit der Einführung der eAU die Lohnfortzahlung im Krankheitsfall berechtigt ist.
+
+Ab dem 1.1.2023 hat der sogenannte gelbe Schein...
+
+*[Gelernt: Betreff enthält 'order']*
+
+### E-Mail #74
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKGAAA=
+**Von**: Heroku Notifications <bot@notifications.heroku.com>
+**Betreff**: Deletion of your data is pending unless you act now
+**Empfangen**: 2022-12-20T08:53:32Z
+**Wichtigkeit**: normal
+**Vorschau**: Hello Heroku Customer,
+
+We are sending this second and final notice to inform you that data in your Heroku account will be deleted unless you log into your account as described below. There has been no activity on your Heroku account in the past year. T...
+
+### E-Mail #75
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3iTAAA=
+**Von**: kundenservice-rechnungonline@telekom.de <kundenservice-rechnungonline@telekom.de>
+**Betreff**: Ihre Telekom Mobilfunk RechnungOnline GK November 2022 (Adresse: Aachener Str. 60-62, Kundenkonto: 0062964611)
+**Empfangen**: 2022-12-15T15:52:19Z
+**Wichtigkeit**: normal
+**Vorschau**: Sehr geehrte Kundin,
+sehr geehrter Kunde,
+
+für die Adresse Aachener Str. 60-62, Kundenkonto 0062964611 erhalten Sie mit dieser E-Mail Ihre aktuelle Mobilfunk-Rechnung.
+
+Rechnung 13050971012521 vom 15.12.2022 für November 2022, Betrag: 160,46 Euro....
+
+*[Gelernt: Betreff enthält 'rechnung']*
+
+### E-Mail #76
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKOAAA=
+**Von**: tado° <tado@delighted.com>
+**Betreff**: Sagen Sie uns Ihre Meinung zu tado°
+**Empfangen**: 2022-12-15T14:29:11Z
+**Wichtigkeit**: normal
+**Vorschau**: Du bist nun seit einem Jahr bei uns. Wir würden uns freuen, mehr über deine Erfahrungen mit tado° zu hören.
+Wie wahrscheinlich ist es, dass Du tado° einem Freund empfiehlst?
+10 – Sehr wahrscheinlich
+
+9
+
+8
+
+7
+
+6
+
+5
+
+4
+
+3
+
+2
+
+1
+
+0 – Un...
+
+### E-Mail #77
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKQAAA=
+**Von**: GitLab <renewals@gitlab.com>
+**Betreff**: Notice: subscription expiration on 12/16/2022
+**Empfangen**: 2022-12-15T08:03:21Z
+**Wichtigkeit**: normal
+**Vorschau**: Hello Oliver,
+
+As a reminder, your GitLab subscription A-S00055271 expires on 12/16/2022. If your subscription is set to auto-renew, you don't need to take any action in response to this message. If your subscription is not set to auto-renew, you ca...
+
+### E-Mail #78
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKWAAA=
+**Von**: Aclewe Werbeagentur Köln <hallo@aclewe.de>
+**Betreff**: Gute News aus Köln im Winter | Q4 2022
+**Empfangen**: 2022-12-14T10:03:29Z
+**Wichtigkeit**: normal
+**Vorschau**: Winter, Weihnachten, Würstchen, Weltmeisterschaft und Win-Win. Der Winter steht im Zeichen des Buchstaben W.‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌
+Wenn Sie Probleme mit der Darstellung haben sollten, klicken Sie...
+
+### E-Mail #79
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKbAAA=
+**Von**: Logz.io Team <team@logz.io>
+**Betreff**: Last chance! Live Open 360 Demo
+**Empfangen**: 2022-12-12T15:02:55Z
+**Wichtigkeit**: normal
+**Vorschau**: All Aboard the Open 360™ Train!
+
+
+
+
+
+
+
+
+All Aboard the Open 360™ Train!
+
+
+There’s still time to register to attend tomorrow’s webinar live!
+
+We’re diving deep into all of the new features of the new Open 360™ platform and the benefits you ca...
+
+### E-Mail #80
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKlAAA=
+**Von**: MediaMarkt Business Solutions <geschaeftskunden@b2b.mediamarkt.de>
+**Betreff**: Aktualisierung der allgemeinen Geschäftsbedingungen für Geschäftskunden
+**Empfangen**: 2022-12-06T13:07:09Z
+**Wichtigkeit**: normal
+**Vorschau**: Hiermit möchten wir Sie gerne über die Änderung unserer allgemeinen Geschäftsbedingungen für MediaMarkt Geschäftskunden informieren.
+
+
+Sehr geehrte Geschäftspartnerin,
+Sehr geehrter Geschäftspartner,
+
+hiermit möchten wir Sie gerne über die anstehend...
+
+### E-Mail #81
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKnAAA=
+**Von**: Heroku Notifications <bot@notifications.heroku.com>
+**Betreff**: Deletion of your data is pending unless you act now
+**Empfangen**: 2022-12-05T08:46:28Z
+**Wichtigkeit**: normal
+**Vorschau**: Hello Heroku Customer,
+
+We noticed there has been no activity on your Heroku account in the past year. To ensure that customer data remains safe at all times, it is our practice to delete accounts, apps and associated add-ons that have not been active f...
+
+### E-Mail #82
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3inAAA=
+**Von**: Penta <operations@getpenta.com>
+**Betreff**: Deine Penta-Rechnung ist da!
+**Empfangen**: 2022-12-02T22:00:47Z
+**Wichtigkeit**: normal
+**Vorschau**: Hi OLIVER!
+
+Deine Penta Rechnung ist da! Du kannst diese ab sofort sowohl in der Web App als auch im Anhang dieser E-Mail finden.
+
+Wir werden den Rechnungsbetrag in Kürze von Deinem Konto abbuchen. Bitte stelle sicher, dass Dein Konto zu die...
+
+*[Gelernt: Betreff enthält 'rechnung']*
+
+### E-Mail #83
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKqAAA=
+**Von**: Denis Herrera <apps-mx@encora.com>
+**Betreff**: Did something go wrong? 🤔
+**Empfangen**: 2022-12-02T17:49:29Z
+**Wichtigkeit**: normal
+**Vorschau**: Hi there, I'm reaching out about our ScrumPoker add-on your team has just tried.  The add-on has recently expired and I noticed you've not renewed your license, so I would like to ask for quick feedback about your trial experience and w
+
+Hi there,...
+
+### E-Mail #84
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3irAAA=
+**Von**: Newsletter.laufmich <newsletter@laufmich.de>
+**Betreff**: Mandanteninfo zum Jahresende 2022
+**Empfangen**: 2022-12-02T12:10:34Z
+**Wichtigkeit**: normal
+**Vorschau**: Sehr geehrte Mandantin,
+sehr geehrter Mandant,
+
+wir möchten uns für die vertrauensvolle Zusammenarbeit im vergangenen Jahr bedanken. Das gesamte Kanzlei-Team wünscht Ihnen und Ihrer Familie eine schöne Weihnachtszeit sowie einen tollen Start in das neu...
+
+### E-Mail #85
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKsAAA=
+**Von**: Zoey Morck <zoey.morck@logz.io>
+**Betreff**: December 2022 | Meet Open 360 - A More Unified and Efficient Logz.io
+**Empfangen**: 2022-12-01T15:32:34Z
+**Wichtigkeit**: normal
+**Vorschau**: Open 360™, powered by Logz.io -  A Platform for Growth
+
+
+
+
+
+
+
+
+Open 360™, powered by Logz.io -  A Platform for Growth
+
+If you missed it, we made a slew of exciting product announcements at AWS re:Invent 2022, including our new  Open 360 platfor...
+
+### E-Mail #86
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKvAAA=
+**Von**: VMware <de-events@vmware.com>
+**Betreff**: Einladung zum VMware Aria Live-Webinar: Der smarte Weg in die Multi-Cloud | 8.12.2022
+**Empfangen**: 2022-11-30T09:21:56Z
+**Wichtigkeit**: normal
+**Vorschau**: Wird diese E-Mail nicht richtig angezeigt? Lesen Sie sie online.
+
+
+
+
+
+
+
+
+VMware Aria: Der smarte Weg in die Multi-Cloud
+
+
+Donnerstag, 08. Dezember 2022
+10:00 – 11:00 Uhr
+
+
+Sie konnten dieses Jahr nicht an der VMware Explore in Barcelon...
+
+### E-Mail #87
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKxAAA=
+**Von**: Laufenberg Michels und Partner mbB <newsletter@laufmich.de>
+**Betreff**: Geplante Änderung des Bewertungsgesetzes
+**Empfangen**: 2022-11-29T14:12:22Z
+**Wichtigkeit**: normal
+**Vorschau**: für die Schenkung von Immobilien‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌...
+
+### E-Mail #88
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluK2AAA=
+**Von**: registrierung@hbci-zka.de <registrierung@hbci-zka.de>
+**Betreff**: FinTS Bankenliste 1 22.11.2022
+**Empfangen**: 2022-11-23T09:54:50Z
+**Wichtigkeit**: normal
+**Vorschau**: Sehr geehrte Damen und Herren,
+
+in der Anlage erhalten Sie den neuesten Stand der FinTS Bankenliste.
+Die aktuellen Änderungen finden Sie in dem enthaltenen PDF fints_institute_history.pdf.
+
+Bitte beachten Sie: wir haben die Bankenliste um eine we...
+
+### E-Mail #89
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluK3AAA=
+**Von**: Telekom Deutschland Geschäftskunden <geschaeftskunden@dialog-telekom.de>
+**Betreff**: MAGENTA THURSDAY mit Top-Angeboten!
+**Empfangen**: 2022-11-23T09:05:26Z
+**Wichtigkeit**: normal
+**Vorschau**: Preisknaller für Geschäftskunden – jetzt zugreifen!
+
+
+
+
+Aktionsangebote für Geschäftskunden –
+jetzt zugreifen beim MAGENTA THURSDAY!
+
+
+
+Browserversion
+
+
+
+
+
+
+Sehr geehrte Damen und Herren,
+
+unser MAGENTA THURSDAY steht vor der Tür – mit ...
+
+### E-Mail #90
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluK7AAA=
+**Von**: Vodafone <info@aktion.vodafone.de>
+**Betreff**: Black Friday Special: Weiterempfehlen und Chance auf 500 € sichern!*
+**Empfangen**: 2022-11-22T12:09:34Z
+**Wichtigkeit**: normal
+**Vorschau**: Empfehlen Sie jetzt Vodafone Business Ihren Geschäftsfreund:innen und erhalten Sie bis zu 310 € Empfehlungsprämie und die Chance auf zusätzliche 500 €!* Nur für kurze Zeit.
+Sollte die E-Mail nicht richtig angezeigt werden, klicken Sie bitte hier. Online-...
+
+### E-Mail #91
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluK8AAA=
+**Von**: VMware <de-events@vmware.com>
+**Betreff**: VMware Local, Podcast zur Explore Europe, Webinar zu Disaster Recovery, Tanzu Hands-on Lab
+**Empfangen**: 2022-11-22T10:22:51Z
+**Wichtigkeit**: normal
+**Vorschau**: Wird diese E-Mail nicht richtig angezeigt? Lesen Sie sie online.
+
+
+Neuigkeiten von VMware
+
+
+
+Dienstag 22. November 2022
+
+Sehr geehrte Leser, willkommen zur 29. Ausgabe des VMware ImBlick Newsletter
+
+VMware Local – in a nutshell
+
+Sie könne...
+
+### E-Mail #92
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLAAAA=
+**Von**: Denis Herrera <apps-mx@encora.com>
+**Betreff**: ScrumPoker: Renew your add-on today!
+**Empfangen**: 2022-11-18T17:23:05Z
+**Wichtigkeit**: normal
+**Vorschau**: Your renewal is rewarded 🎁 ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ...
+
+### E-Mail #93
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLGAAA=
+**Von**: VMware <de-events@vmware.com>
+**Betreff**: Schade, dass Sie an der VMware Explore 2022 Europe in Barcelona nicht teilnehmen konnten
+**Empfangen**: 2022-11-17T06:06:18Z
+**Wichtigkeit**: normal
+**Vorschau**: Wird diese E-Mail nicht richtig angezeigt? Lesen Sie sie online.
+
+
+Es ist noch nicht zu spät, um alle Highlights anzusehen.
+
+
+
+
+
+Sämtliche Sessions und Keynotes zu Lösungen der VMware Explore sind ab sofort als On-Demand-Videos verfügbar. Inf...
+
+### E-Mail #94
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3jHAAA=
+**Von**: kundenservice-rechnungonline@telekom.de <kundenservice-rechnungonline@telekom.de>
+**Betreff**: Ihre Telekom Mobilfunk RechnungOnline GK Oktober 2022 (Adresse: Aachener Str. 60-62, Kundenkonto: 0062964611)
+**Empfangen**: 2022-11-16T15:56:34Z
+**Wichtigkeit**: normal
+**Vorschau**: Sehr geehrte Kundin,
+sehr geehrter Kunde,
+
+für die Adresse Aachener Str. 60-62, Kundenkonto 0062964611 erhalten Sie mit dieser E-Mail Ihre aktuelle Mobilfunk-Rechnung.
+
+Rechnung 13000669012521 vom 16.11.2022 für Oktober 2022, Betrag: 160,26 Euro....
+
+*[Gelernt: Betreff enthält 'rechnung']*
+
+### E-Mail #95
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLIAAA=
+**Von**: GitLab <renewals@gitlab.com>
+**Betreff**: New and streamlined GitLab renewal process
+**Empfangen**: 2022-11-16T08:02:54Z
+**Wichtigkeit**: normal
+**Vorschau**: Hello Oliver,
+
+As your GitLab subscription A-S00055271 is approaching renewal on 12/16/2022, we want to make you aware of changes to your renewal process to improve your renewal experience. These changes are not applicable to users of our community ...
+
+### E-Mail #96
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLSAAA=
+**Von**: Slack <no-reply@email.slackhq.com>
+**Betreff**: Letzte Chance: Die nächste Entwicklungsstufe der Zusammenarbeit
+**Empfangen**: 2022-11-08T09:07:12Z
+**Wichtigkeit**: normal
+**Vorschau**: WEBINAR
+Jenseits von Hybrid: Von der Zusammenarbeit zur Gemeinschaft
+9 November 2022
+11:00 Uhr CET
+Jetzt anmelden
+
+Ein Gefühl der Zugehörigkeit kann auch ohne Büro gepflegt werden. Aber wie können Unternehmen die Zusammenarbeit und Unternehmenskultu...
+
+### E-Mail #97
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLUAAA=
+**Von**: Telekom - NoReply <noreply@telekom.de>
+**Betreff**: Information zum besten Tarif
+**Empfangen**: 2022-11-07T14:08:06Z
+**Wichtigkeit**: normal
+**Vorschau**: ab sofort informieren wir Sie einmal im Jahr über den für Sie besten Tarif.
+
+
+
+INFORMATION ZUM BESTEN TARIF
+
+Kundennummer: 88394195
+
+Guten Tag,
+
+einmal im Jahr informieren wir Sie über den für Sie besten Tarif. Wir kommen damit einer rechtlichen...
+
+### E-Mail #98
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLWAAA=
+**Von**: Denis Herrera <apps-mx@encora.com>
+**Betreff**: How is your experience going?
+**Empfangen**: 2022-11-04T17:01:11Z
+**Wichtigkeit**: normal
+**Vorschau**: Checking on your Scrum Poker experience 🔋 ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ‌  ͏ ...
+
+### E-Mail #99
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLXAAA=
+**Von**: The Logz.io Team <team@logz.io>
+**Betreff**: Full K8s Observability in Minutes + More
+**Empfangen**: 2022-11-04T14:03:29Z
+**Wichtigkeit**: normal
+**Vorschau**: Visit us at AWS re:Invent {Booth#261}
+
+
+
+
+
+Observability for Teams that ♥ Open Source
+
+The Best Platform, with the Best Tools, for the Best Users
+
+
+Logz.io is committed to open source, using the best open source tools available for each job:...
+
+### E-Mail #100
+**ID**: AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLaAAA=
+**Von**: registrierung@hbci-zka.de <registrierung@hbci-zka.de>
+**Betreff**: FinTS Bankenliste 1 03. November 2022
+**Empfangen**: 2022-11-03T10:08:25Z
+**Wichtigkeit**: normal
+**Vorschau**: Sehr geehrte Damen und Herren,
+
+in der Anlage erhalten Sie den neuesten Stand der FinTS Bankenliste.
+Die aktuellen Änderungen finden Sie in dem enthaltenen PDF fints_institute_history.pdf.
+
+Bitte beachten Sie: wir haben die Bankenliste um eine we...
+
+
+## Antwortformat (JSON)
+
+```json
+{
+  "decisions": [
+    {
+      "mail_id": "...",
+      "mail_index": 1,
+      "category": "important",
+      "action": "move",
+      "action_params": {"folder": "Wichtig"},
+      "reasoning": "Direkt an dich adressiert, Kundenanfrage",
+      "confidence": 0.9
+    }
+  ]
+}
+```
+
+Gib nur das JSON zurück, keine Erklärungen davor oder danach.

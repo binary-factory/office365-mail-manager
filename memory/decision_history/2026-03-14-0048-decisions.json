@@ -1,0 +1,1104 @@
+{
+  "timestamp": "2026-03-14T00:54:10.588387",
+  "decisions": [
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSZRrCAAA=",
+      "mail_index": 1,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {},
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSUHegAAA=",
+      "mail_index": 2,
+      "category": "order",
+      "action": "forward",
+      "action_params": {
+        "to": "l.pata@binary-factory.de"
+      },
+      "reasoning": "Order/Bestellung mit PDF - an Buchhaltung",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSUHeeAAA=",
+      "mail_index": 3,
+      "category": "newsletter",
+      "action": "mark_read",
+      "action_params": {
+        "to": "l.pata@binary-factory.de"
+      },
+      "reasoning": "LinkedIn Social Update",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSSS_fAAA=",
+      "mail_index": 4,
+      "category": "notification",
+      "action": "mark_read",
+      "action_params": {
+        "to": "l.pata@binary-factory.de"
+      },
+      "reasoning": "DevOps Notification",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSSS_eAAA=",
+      "mail_index": 5,
+      "category": "important",
+      "action": "flag",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "Build/DevOps Failed - Handlungsbedarf!",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSSS_dAAA=",
+      "mail_index": 6,
+      "category": "notification",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "DevOps Notification",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSSS_cAAA=",
+      "mail_index": 7,
+      "category": "notification",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "DevOps Notification",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbrAAA=",
+      "mail_index": 8,
+      "category": "important",
+      "action": "flag",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "Build/DevOps Failed - Handlungsbedarf!",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbqAAA=",
+      "mail_index": 9,
+      "category": "newsletter",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "LinkedIn Social Update",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbpAAA=",
+      "mail_index": 10,
+      "category": "important",
+      "action": "flag",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "Build/DevOps Failed - Handlungsbedarf!",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIboAAA=",
+      "mail_index": 11,
+      "category": "important",
+      "action": "flag",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "Build/DevOps Failed - Handlungsbedarf!",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbnAAA=",
+      "mail_index": 12,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbmAAA=",
+      "mail_index": 13,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIblAAA=",
+      "mail_index": 14,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbkAAA=",
+      "mail_index": 15,
+      "category": "important",
+      "action": "flag",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "Build/DevOps Failed - Handlungsbedarf!",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbiAAA=",
+      "mail_index": 16,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbhAAA=",
+      "mail_index": 17,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbgAAA=",
+      "mail_index": 18,
+      "category": "newsletter",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "LinkedIn Social Update",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRyIbaAAA=",
+      "mail_index": 19,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANRRFh3AAA=",
+      "mail_index": 20,
+      "category": "newsletter",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "LinkedIn Social Update",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANPLZjuAAA=",
+      "mail_index": 21,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANPLfxvAAA=",
+      "mail_index": 22,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANPLfxuAAA=",
+      "mail_index": 23,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANO3OOTAAA=",
+      "mail_index": 24,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANO3OOSAAA=",
+      "mail_index": 25,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANOtRYAAAA=",
+      "mail_index": 26,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANNQOh9AAA=",
+      "mail_index": 27,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANL1d2JAAA=",
+      "mail_index": 28,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANFQjt5AAA=",
+      "mail_index": 29,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANDL9c7AAA=",
+      "mail_index": 30,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANA-FHpAAA=",
+      "mail_index": 31,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANA-FHoAAA=",
+      "mail_index": 32,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AANA-FHnAAA=",
+      "mail_index": 33,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AAM-ImHiAAA=",
+      "mail_index": 34,
+      "category": "important",
+      "action": "flag",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "ISO Zertifizierung - T\u00fcr\u00f6ffner f\u00fcr Ausschreibungen",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AAM-ImHhAAA=",
+      "mail_index": 35,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAI_kcy2AAA=",
+      "mail_index": 36,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAI_kcy0AAA=",
+      "mail_index": 37,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIfFopcAAA=",
+      "mail_index": 38,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIfFopdAAA=",
+      "mail_index": 39,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIfFopbAAA=",
+      "mail_index": 40,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIPS5EhAAA=",
+      "mail_index": 41,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIMgs-yAAA=",
+      "mail_index": 42,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIMgs-xAAA=",
+      "mail_index": 43,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIKkfxtAAA=",
+      "mail_index": 44,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIHyE4KAAA=",
+      "mail_index": 45,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAIKkfxsAAA=",
+      "mail_index": 46,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAH9q56xAAA=",
+      "mail_index": 47,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAH9q56wAAA=",
+      "mail_index": 48,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAH9q56uAAA=",
+      "mail_index": 49,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAHiMkzBAAA=",
+      "mail_index": 50,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEKAADVkBPPXF1_TYTTEroMWt98AAFNNU5uAAA=",
+      "mail_index": 51,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3giAAA=",
+      "mail_index": 52,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3gvAAA=",
+      "mail_index": 53,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3hYAAA=",
+      "mail_index": 54,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJJAAA=",
+      "mail_index": 55,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJQAAA=",
+      "mail_index": 56,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJTAAA=",
+      "mail_index": 57,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJVAAA=",
+      "mail_index": 58,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJWAAA=",
+      "mail_index": 59,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJYAAA=",
+      "mail_index": 60,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJcAAA=",
+      "mail_index": 61,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3hvAAA=",
+      "mail_index": 62,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJeAAA=",
+      "mail_index": 63,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJfAAA=",
+      "mail_index": 64,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJiAAA=",
+      "mail_index": 65,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJkAAA=",
+      "mail_index": 66,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJoAAA=",
+      "mail_index": 67,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJtAAA=",
+      "mail_index": 68,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3iBAAA=",
+      "mail_index": 69,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluJ2AAA=",
+      "mail_index": 70,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKAAAA=",
+      "mail_index": 71,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKBAAA=",
+      "mail_index": 72,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKFAAA=",
+      "mail_index": 73,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKGAAA=",
+      "mail_index": 74,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3iTAAA=",
+      "mail_index": 75,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKOAAA=",
+      "mail_index": 76,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKQAAA=",
+      "mail_index": 77,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKWAAA=",
+      "mail_index": 78,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKbAAA=",
+      "mail_index": 79,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKlAAA=",
+      "mail_index": 80,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKnAAA=",
+      "mail_index": 81,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3inAAA=",
+      "mail_index": 82,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKqAAA=",
+      "mail_index": 83,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3irAAA=",
+      "mail_index": 84,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKsAAA=",
+      "mail_index": 85,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKvAAA=",
+      "mail_index": 86,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluKxAAA=",
+      "mail_index": 87,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluK2AAA=",
+      "mail_index": 88,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluK3AAA=",
+      "mail_index": 89,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluK7AAA=",
+      "mail_index": 90,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluK8AAA=",
+      "mail_index": 91,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLAAAA=",
+      "mail_index": 92,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLGAAA=",
+      "mail_index": 93,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AADulqptAADVkBPPXF1_TYTTEroMWt98AADul3jHAAA=",
+      "mail_index": 94,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLIAAA=",
+      "mail_index": 95,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLSAAA=",
+      "mail_index": 96,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLUAAA=",
+      "mail_index": 97,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLWAAA=",
+      "mail_index": 98,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLXAAA=",
+      "mail_index": 99,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEXAADVkBPPXF1_TYTTEroMWt98AADuluLaAAA=",
+      "mail_index": 100,
+      "category": "info",
+      "action": "mark_read",
+      "action_params": {
+        "flag": "high_importance"
+      },
+      "reasoning": "General info/newsletter",
+      "confidence": 0.9
+    }
+  ],
+  "total": 100
+}

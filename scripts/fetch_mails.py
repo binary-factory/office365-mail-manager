@@ -8,6 +8,7 @@ import json
 import sys
 import requests
 from datetime import datetime
+from pathlib import Path
 from auth_microsoft import get_auth_headers, load_config
 
 

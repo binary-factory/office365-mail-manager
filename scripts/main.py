@@ -48,7 +48,7 @@ def cmd_process_once(dry_run=False, limit=20):
         return 1
     
     # Save batch for reference
-    batch_file = save_batch({'mails': mails, 'timestamp': datetime.now().isoformat()})
+    batch_file = save_batch(mails)
     print(f"  ✓ Saved to: {batch_file}")
     
     # Step 2: Classify (prepares prompt for LLM)
