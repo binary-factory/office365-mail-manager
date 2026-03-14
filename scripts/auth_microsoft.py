@@ -46,6 +46,7 @@ def load_config():
                     'tenantId': get_env('O365_TENANT_ID', 'O365TENANTID'),
                     'clientSecret': get_env('O365_CLIENT_SECRET', 'O365CLIENTSECRET'),
                     'userPrincipalName': get_env('O365_USER_EMAIL', 'O365USEREMAIL'),
+                    'emailSignature': get_env('O365_EMAIL_SIGNATURE', 'O365EMAILSIGNATURE') or '',
                 },
                 'behavior': {
                     'timezone': get_env('O365_TIMEZONE', 'O365TIMEZONE') or 'Europe/Berlin',

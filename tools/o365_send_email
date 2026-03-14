@@ -14,7 +14,16 @@ from auth_microsoft import get_auth_headers, load_config
 import requests
 
 
-def send_email(to, subject, body, cc=None, bcc=None, html=False):
+def load_signature():
+    """Load HTML signature from config if available."""
+    config = load_config()
+    # Try both formats: O365_EMAIL_SIGNATURE and O365EMAILSIGNATURE
+    signature = config.get('microsoft', {}).get('emailSignature') or \
+                config.get('behavior', {}).get('emailSignature', '')
+    return signature
+
+
+def send_email(to, subject, body, cc=None, bcc=None, html=False, add_signature=True):
     """Send a new email via Microsoft Graph API."""
     config = load_config()
     user = config['microsoft']['userPrincipalName']
@@ -22,6 +31,19 @@ def send_email(to, subject, body, cc=None, bcc=None, html=False):
     
     # Build recipients
     to_recipients = [{"emailAddress": {"address": addr.strip()}} for addr in to.split(',')]
+    
+    # Append signature if configured and not disabled
+    if add_signature:
+        signature = load_signature()
+        if signature:
+            if html:
+                body = body + signature
+            else:
+                # Convert signature to plain text for text emails
+                import re
+                text_signature = re.sub(r'<br\s*/?>', '\n', signature)
+                text_signature = re.sub(r'<[^>]+>', '', text_signature)
+                body = body + "\n" + text_signature
     
     message = {
         "subject": subject,
