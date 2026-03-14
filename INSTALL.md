@@ -63,9 +63,9 @@ openclaw skills install github:dein-username/office365-mail-manager
 ### Option B: Manuell
 
 ```bash
-# Skill-Ordner erstellen
-mkdir -p ~/.openclaw/skills/office365-mail-manager
-cd ~/.openclaw/skills/office365-mail-manager
+# Skill-Ordner erstellen (Entwicklung)
+mkdir -p ~/openclaw-skills/office365-mail-manager
+cd ~/openclaw-skills/office365-mail-manager
 
 # Dateien kopieren (oder Git clone)
 git clone https://github.com/dein-username/office365-mail-manager.git .
@@ -74,7 +74,13 @@ git clone https://github.com/dein-username/office365-mail-manager.git .
 python3 -m venv .venv
 source .venv/bin/activate
 pip install requests
+
+# Wichtig: Symlink in OpenClaw Skills-Verzeichnis erstellen
+mkdir -p ~/.openclaw/skills
+ln -s ~/openclaw-skills/office365-mail-manager ~/.openclaw/skills/office365-mail-manager
 ```
+
+> **Wichtig:** OpenClaw erwartet Skills in `~/.openclaw/skills/`. Ein Symlink verbindet den Entwicklungsordner mit OpenClaw.
 
 ---
 
