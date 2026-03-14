@@ -33,21 +33,25 @@ def load_config():
             # Config is stored in 'env' as flat key-value pairs
             env = skill_config.get('env', {})
             
+            # Support both formats: O365CLIENTID (new) and O365_CLIENT_ID (old)
+            # Prioritize the new format (without underscores) as it contains the rotated secret
+            def get_env(key_with_underscore, key_without_underscore):
+                return env.get(key_without_underscore) or env.get(key_with_underscore)
+            
             # Build nested config from flat env vars
-            # O365_CLIENT_ID, O365_TENANT_ID, O365_CLIENT_SECRET, O365_USER_EMAIL
             result = {
                 'enabled': skill_config.get('enabled', False),
                 'microsoft': {
-                    'clientId': env.get('O365_CLIENT_ID'),
-                    'tenantId': env.get('O365_TENANT_ID'),
-                    'clientSecret': env.get('O365_CLIENT_SECRET'),
-                    'userPrincipalName': env.get('O365_USER_EMAIL'),
+                    'clientId': get_env('O365_CLIENT_ID', 'O365CLIENTID'),
+                    'tenantId': get_env('O365_TENANT_ID', 'O365TENANTID'),
+                    'clientSecret': get_env('O365_CLIENT_SECRET', 'O365CLIENTSECRET'),
+                    'userPrincipalName': get_env('O365_USER_EMAIL', 'O365USEREMAIL'),
                 },
                 'behavior': {
-                    'timezone': env.get('O365_TIMEZONE', 'Europe/Berlin'),
-                    'checkIntervalMinutes': int(env.get('O365_CHECK_INTERVAL', '30')),
-                    'maxMailsPerBatch': int(env.get('O365_MAX_MAILS', '20')),
-                    'dryRun': env.get('O365_DRY_RUN', 'false').lower() == 'true',
+                    'timezone': get_env('O365_TIMEZONE', 'O365TIMEZONE') or 'Europe/Berlin',
+                    'checkIntervalMinutes': int(get_env('O365_CHECK_INTERVAL', 'O365CHECKINTERVAL') or '30'),
+                    'maxMailsPerBatch': int(get_env('O365_MAX_MAILS', 'O365MAXMAILS') or '20'),
+                    'dryRun': (get_env('O365_DRY_RUN', 'O365DRYRUN') or 'false').lower() == 'true',
                 }
             }
             

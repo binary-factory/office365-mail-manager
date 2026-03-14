@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-03-14-1505",
+  "processed": [
+    {
+      "success": true,
+      "action": "move",
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AANSuszJAADVkBPPXF1_TYTTEroMWt98AANSutCxAAA=",
+      "folder": "Rechnungen"
+    },
+    {
+      "success": true,
+      "action": "move",
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AANSuszKAADVkBPPXF1_TYTTEroMWt98AANSutiEAAA=",
+      "folder": "Wichtig"
+    },
+    {
+      "success": true,
+      "action": "move",
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AAM-ImHiAAA=",
+      "folder": "Wichtig"
+    },
+    {
+      "success": true,
+      "action": "mark_read",
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AANClEG0AADVkBPPXF1_TYTTEroMWt98AANSa6dlAAA="
+    },
+    {
+      "success": true,
+      "action": "mark_read",
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AANClEG0AADVkBPPXF1_TYTTEroMWt98AANSa6dmAAA="
+    }
+  ],
+  "failed": [
+    {
+      "success": false,
+      "error": "404 Client Error: Not Found for url: https://graph.microsoft.com/v1.0/users/d.pata@binary-factory.de/messages/AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AAM-ImHiAAA=",
+      "action": "mark_read",
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAETAADVkBPPXF1_TYTTEroMWt98AAM-ImHiAAA="
+    }
+  ],
+  "dry_run": false
+}

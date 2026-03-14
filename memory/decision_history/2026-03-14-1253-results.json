@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-03-14-1253",
+  "processed": [
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSbBMpAAA=",
+      "action": "move",
+      "params": {
+        "folder": "Rechnungen"
+      },
+      "also_marked_read": true,
+      "status": "dry_run",
+      "reasoning": "Shopify Rechnung \u00fcber $3,695.14 USD f\u00fcr bellicon CH - Rechnung mit Anhang",
+      "category": "invoice"
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSbBMoAAA=",
+      "action": "mark_read",
+      "params": {},
+      "also_marked_read": true,
+      "status": "dry_run",
+      "reasoning": "Google Calendar Info-Mail ohne Handlungsbedarf",
+      "category": "info"
+    },
+    {
+      "mail_id": "AAMkAGZkY2I1ODg5LTZlMDMtNDQ4MS1hY2E3LTA2NDMzNDQ2MDViNABGAAAAAADy84KCny0zS7JG61xfKy-TBwDVkBPPXF1_TYTTEroMWt98AAAAAAEMAADVkBPPXF1_TYTTEroMWt98AANSbBMoAAA=",
+      "action": "move",
+      "params": {
+        "folder": "Wichtig"
+      },
+      "also_marked_read": true,
+      "status": "dry_run",
+      "reasoning": "GitHub Deploy failed auf main branch - Hohe Priorit\u00e4t, Handlungsbedarf",
+      "category": "important"
+    }
+  ],
+  "failed": [],
+  "dry_run": true
+}
