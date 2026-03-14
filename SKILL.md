@@ -317,6 +317,36 @@ Tools are executable scripts in `tools/`:
 - `tools/o365_execute_actions` — Execute decisions
 - `tools/o365_process_feedback` — Learn from feedback
 - `tools/o365_send_daily_summary` — Daily reports
+- `tools/o365_send_email` — Send new emails
+
+## Agent Behavior Rules
+
+### Sending Emails (IMPORTANT)
+**NEVER send emails without explicit user approval!**
+
+**Workflow:**
+1. **Draft** — Create email draft with suggested content
+2. **Ask** — Present to user: "Soll ich diese Email senden?"
+3. **Wait** — Wait for explicit confirmation ("Ja", "Senden", etc.)
+4. **Send** — Only then use `o365_send_email`
+
+**When to propose replies:**
+- Customer inquiries requiring response
+- Simple acknowledgments ("Danke, erhalten")
+- Standard requests with clear answers
+- Follow-ups on previous conversations
+
+**When NOT to propose:**
+- Complex negotiations
+- Sensitive topics
+- Legal matters
+- When unsure about tone/content
+
+**Proactive approach:**
+- Monitor incoming emails via Heartbeat
+- Identify emails needing response
+- Present draft to user: "Ich habe eine Antwort entworfen..."
+- Wait for approval before sending
 
 ## Legacy Scripts
 
