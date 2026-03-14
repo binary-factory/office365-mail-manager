@@ -1,0 +1,62 @@
+#!/Users/dome/.openclaw/skills/office365-mail-manager/.venv/bin/python3
+"""
+Tool: o365_process_feedback
+Processes user feedback to improve future classifications.
+"""
+
+import json
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
+
+from process_feedback import process_feedback as process_feedback_internal
+
+
+def main():
+    """Read JSON params from stdin, process feedback, output JSON result."""
+    try:
+        input_data = json.load(sys.stdin) if not sys.stdin.isatty() else {}
+    except json.JSONDecodeError:
+        input_data = {}
+    
+    params = input_data.get('params', input_data)
+    
+    feedback = params.get('feedback', '')
+    batch_timestamp = params.get('batch_timestamp')
+    
+    if not feedback:
+        print(json.dumps({
+            "success": False,
+            "error": "No feedback provided",
+            "feedback": None,
+            "rules_learned": []
+        }, indent=2))
+        return 1
+    
+    try:
+        success = process_feedback_internal(feedback, batch_timestamp)
+        
+        result = {
+            "success": success,
+            "feedback": feedback,
+            "batch_timestamp": batch_timestamp,
+            "message": "Feedback processed and rules updated" if success else "Failed to parse feedback",
+            "rules_learned": []  # Could be enhanced to return actual rules learned
+        }
+        
+        print(json.dumps(result, indent=2))
+        return 0 if success else 1
+        
+    except Exception as e:
+        print(json.dumps({
+            "success": False,
+            "error": str(e),
+            "feedback": feedback,
+            "rules_learned": []
+        }, indent=2))
+        return 1
+
+
+if __name__ == '__main__':
+    sys.exit(main())

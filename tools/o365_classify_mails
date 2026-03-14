@@ -1,0 +1,73 @@
+#!/Users/dome/.openclaw/skills/office365-mail-manager/.venv/bin/python3
+"""
+Tool: o365_classify_mails
+Analyzes emails with LLM and prepares classification decisions.
+"""
+
+import json
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
+
+from classify_mails import prepare_llm_prompt, load_learned_rules
+from datetime import datetime
+from pathlib import Path
+
+
+def main():
+    """Read JSON params from stdin, prepare classification, output JSON result."""
+    try:
+        input_data = json.load(sys.stdin) if not sys.stdin.isatty() else {}
+    except json.JSONDecodeError:
+        input_data = {}
+    
+    params = input_data.get('params', input_data)
+    
+    mails = params.get('mails', [])
+    apply_rules = params.get('apply_learned_rules', True)
+    
+    if not mails:
+        print(json.dumps({
+            "success": False,
+            "error": "No mails provided for classification",
+            "prompt": None,
+            "mails_count": 0
+        }, indent=2))
+        return 1
+    
+    try:
+        learned_rules = load_learned_rules() if apply_rules else {}
+        prompt = prepare_llm_prompt(mails, learned_rules)
+        
+        # Save prompt for reference
+        timestamp = datetime.now().strftime('%Y%m%d-%H%M%S')
+        prompt_file = Path(__file__).parent.parent / "memory" / "decision_history" / f"{timestamp}-prompt.txt"
+        prompt_file.parent.mkdir(parents=True, exist_ok=True)
+        with open(prompt_file, 'w') as f:
+            f.write(prompt)
+        
+        result = {
+            "success": True,
+            "prompt": prompt,
+            "mails_count": len(mails),
+            "timestamp": timestamp,
+            "prompt_file": str(prompt_file),
+            "note": "LLM should process this prompt and return decisions JSON"
+        }
+        
+        print(json.dumps(result, indent=2))
+        return 0
+        
+    except Exception as e:
+        print(json.dumps({
+            "success": False,
+            "error": str(e),
+            "prompt": None,
+            "mails_count": len(mails)
+        }, indent=2))
+        return 1
+
+
+if __name__ == '__main__':
+    sys.exit(main())

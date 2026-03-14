@@ -95,30 +95,63 @@ def execute_action(mail_id, action, params=None):
         return {'success': False, 'error': str(e), 'action': action, 'mail_id': mail_id}
 
 
+# Cache für Ordner-IDs (pro Batch)
+_folder_cache = {}
+
 def get_or_create_folder(folder_name, headers, user):
-    """Get folder ID or create if not exists."""
-    # First, try to find existing folder
-    response = requests.get(
-        f"https://graph.microsoft.com/v1.0/users/{user}/mailFolders",
-        headers=headers,
-        timeout=30
-    )
-    response.raise_for_status()
-    folders = response.json().get('value', [])
+    """Get folder ID or create if not exists. Uses caching to avoid duplicates."""
+    global _folder_cache
     
-    for folder in folders:
-        if folder.get('displayName') == folder_name:
-            return folder['id']
+    # Check cache first
+    if folder_name in _folder_cache:
+        return _folder_cache[folder_name]
+    
+    # Search for folder by name using filter
+    try:
+        response = requests.get(
+            f"https://graph.microsoft.com/v1.0/users/{user}/mailFolders",
+            headers=headers,
+            params={"$filter": f"displayName eq '{folder_name}'"},
+            timeout=30
+        )
+        response.raise_for_status()
+        folders = response.json().get('value', [])
+        
+        if folders:
+            folder_id = folders[0]['id']
+            _folder_cache[folder_name] = folder_id
+            return folder_id
+    except Exception:
+        pass  # Fall through to create
     
     # Create folder if not exists
-    create_response = requests.post(
-        f"https://graph.microsoft.com/v1.0/users/{user}/mailFolders",
-        headers=headers,
-        json={'displayName': folder_name},
-        timeout=30
-    )
-    create_response.raise_for_status()
-    return create_response.json()['id']
+    try:
+        create_response = requests.post(
+            f"https://graph.microsoft.com/v1.0/users/{user}/mailFolders",
+            headers=headers,
+            json={'displayName': folder_name},
+            timeout=30
+        )
+        create_response.raise_for_status()
+        folder_id = create_response.json()['id']
+        _folder_cache[folder_name] = folder_id
+        return folder_id
+    except requests.exceptions.HTTPError as e:
+        if e.response.status_code == 409:
+            # Folder already exists, search again without filter
+            response = requests.get(
+                f"https://graph.microsoft.com/v1.0/users/{user}/mailFolders",
+                headers=headers,
+                params={'$top': 100},  # Get more folders
+                timeout=30
+            )
+            response.raise_for_status()
+            folders = response.json().get('value', [])
+            for folder in folders:
+                if folder.get('displayName') == folder_name:
+                    _folder_cache[folder_name] = folder['id']
+                    return folder['id']
+        raise
 
 
 def process_batch(decisions_file, dry_run=False):

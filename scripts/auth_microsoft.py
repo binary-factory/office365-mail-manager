@@ -24,7 +24,62 @@ def load_config():
     try:
         with open(config_path) as f:
             config = json.load(f)
-            return config.get('skills', {}).get('office365-mail-manager', {})
+            # OpenClaw uses skills.entries.<skillKey> structure
+            skill_config = config.get('skills', {}).get('entries', {}).get('office365-mail-manager', {})
+            
+            if not skill_config:
+                raise KeyError("office365-mail-manager")
+            
+            # Config is stored in 'env' as flat key-value pairs
+            env = skill_config.get('env', {})
+            
+            # Build nested config from flat env vars
+            # O365_CLIENT_ID, O365_TENANT_ID, O365_CLIENT_SECRET, O365_USER_EMAIL
+            result = {
+                'enabled': skill_config.get('enabled', False),
+                'microsoft': {
+                    'clientId': env.get('O365_CLIENT_ID'),
+                    'tenantId': env.get('O365_TENANT_ID'),
+                    'clientSecret': env.get('O365_CLIENT_SECRET'),
+                    'userPrincipalName': env.get('O365_USER_EMAIL'),
+                },
+                'behavior': {
+                    'timezone': env.get('O365_TIMEZONE', 'Europe/Berlin'),
+                    'checkIntervalMinutes': int(env.get('O365_CHECK_INTERVAL', '30')),
+                    'maxMailsPerBatch': int(env.get('O365_MAX_MAILS', '20')),
+                    'dryRun': env.get('O365_DRY_RUN', 'false').lower() == 'true',
+                }
+            }
+            
+            # Validate required fields
+            if not result['microsoft']['clientId']:
+                raise KeyError("O365_CLIENT_ID")
+            if not result['microsoft']['tenantId']:
+                raise KeyError("O365_TENANT_ID")
+            if not result['microsoft']['clientSecret']:
+                raise KeyError("O365_CLIENT_SECRET")
+            if not result['microsoft']['userPrincipalName']:
+                raise KeyError("O365_USER_EMAIL")
+            
+            return result
+    except FileNotFoundError:
+        print(f"Config file not found: {config_path}", file=sys.stderr)
+        print("\nRequired OpenClaw config:", file=sys.stderr)
+        print("  openclaw config set skills.entries.office365-mail-manager.enabled true", file=sys.stderr)
+        print("  openclaw config set skills.entries.office365-mail-manager.env.O365_CLIENT_ID 'YOUR_ID'", file=sys.stderr)
+        print("  openclaw config set skills.entries.office365-mail-manager.env.O365_TENANT_ID 'YOUR_ID'", file=sys.stderr)
+        print("  openclaw config set skills.entries.office365-mail-manager.env.O365_CLIENT_SECRET 'YOUR_SECRET'", file=sys.stderr)
+        print("  openclaw config set skills.entries.office365-mail-manager.env.O365_USER_EMAIL 'email@domain.com'", file=sys.stderr)
+        sys.exit(1)
+    except KeyError as e:
+        print(f"Missing config: {e}", file=sys.stderr)
+        print("\nRequired OpenClaw config:", file=sys.stderr)
+        print("  openclaw config set skills.entries.office365-mail-manager.enabled true", file=sys.stderr)
+        print("  openclaw config set skills.entries.office365-mail-manager.env.O365_CLIENT_ID 'YOUR_ID'", file=sys.stderr)
+        print("  openclaw config set skills.entries.office365-mail-manager.env.O365_TENANT_ID 'YOUR_ID'", file=sys.stderr)
+        print("  openclaw config set skills.entries.office365-mail-manager.env.O365_CLIENT_SECRET 'YOUR_SECRET'", file=sys.stderr)
+        print("  openclaw config set skills.entries.office365-mail-manager.env.O365_USER_EMAIL 'email@domain.com'", file=sys.stderr)
+        sys.exit(1)
     except Exception as e:
         print(f"Error loading config: {e}", file=sys.stderr)
         sys.exit(1)

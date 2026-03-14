@@ -1,0 +1,57 @@
+#!/Users/dome/.openclaw/skills/office365-mail-manager/.venv/bin/python3
+"""
+Tool: o365_fetch_unread_mails
+Fetches unread emails from Office 365 inbox.
+"""
+
+import json
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
+
+from fetch_mails import fetch_unread_mails, save_batch
+from datetime import datetime
+
+
+def main():
+    """Read JSON params from stdin, fetch mails, output JSON result."""
+    try:
+        input_data = json.load(sys.stdin) if not sys.stdin.isatty() else {}
+    except json.JSONDecodeError:
+        input_data = {}
+    
+    params = input_data.get('params', input_data)  # Support both wrapped and direct
+    
+    limit = params.get('limit', 20)
+    save = params.get('save_batch', True)
+    
+    try:
+        mails = fetch_unread_mails(limit)
+        
+        result = {
+            "success": True,
+            "count": len(mails),
+            "mails": mails,
+            "timestamp": datetime.now().isoformat()
+        }
+        
+        if save and mails:
+            batch_file = save_batch(mails)
+            result["batch_file"] = str(batch_file)
+        
+        print(json.dumps(result, indent=2))
+        return 0
+        
+    except Exception as e:
+        print(json.dumps({
+            "success": False,
+            "error": str(e),
+            "count": 0,
+            "mails": []
+        }, indent=2))
+        return 1
+
+
+if __name__ == '__main__':
+    sys.exit(main())

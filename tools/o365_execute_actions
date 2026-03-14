@@ -1,0 +1,108 @@
+#!/Users/dome/.openclaw/skills/office365-mail-manager/.venv/bin/python3
+"""
+Tool: o365_execute_actions
+Executes actions on emails based on classification decisions.
+"""
+
+import json
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
+
+from execute_actions import execute_action
+from datetime import datetime
+from pathlib import Path
+
+
+def main():
+    """Read JSON params from stdin, execute actions, output JSON result."""
+    try:
+        input_data = json.load(sys.stdin) if not sys.stdin.isatty() else {}
+    except json.JSONDecodeError:
+        input_data = {}
+    
+    params = input_data.get('params', input_data)
+    
+    decisions = params.get('decisions', [])
+    dry_run = params.get('dry_run', False)
+    
+    if not decisions:
+        print(json.dumps({
+            "success": False,
+            "error": "No decisions provided",
+            "processed_count": 0,
+            "failed_count": 0
+        }, indent=2))
+        return 1
+    
+    try:
+        timestamp = datetime.now().strftime('%Y-%m-%d-%H%M')
+        results = {
+            'timestamp': timestamp,
+            'processed': [],
+            'failed': [],
+            'dry_run': dry_run
+        }
+        
+        for decision in decisions:
+            mail_id = decision.get('mail_id')
+            action = decision.get('action')
+            action_params = decision.get('action_params', decision.get('params', {}))
+            
+            if dry_run:
+                # Immer als gelesen markieren (zusätzlich zur Hauptaktion)
+                results['processed'].append({
+                    'mail_id': mail_id,
+                    'action': action,
+                    'params': action_params,
+                    'also_marked_read': True,
+                    'status': 'dry_run',
+                    'reasoning': decision.get('reasoning', ''),
+                    'category': decision.get('category', 'unknown')
+                })
+            else:
+                # 1. Hauptaktion ausführen (z.B. move, forward)
+                if action and action != 'none':
+                    result = execute_action(mail_id, action, action_params)
+                    if result['success']:
+                        results['processed'].append(result)
+                    else:
+                        results['failed'].append(result)
+                
+                # 2. IMMER als gelesen markieren (damit es nicht wieder erscheint)
+                read_result = execute_action(mail_id, 'mark_read', {})
+                if not read_result['success']:
+                    results['failed'].append(read_result)
+        
+        # Save results
+        results_file = Path(__file__).parent.parent / "memory" / "decision_history" / f"{timestamp}-results.json"
+        results_file.parent.mkdir(parents=True, exist_ok=True)
+        with open(results_file, 'w') as f:
+            json.dump(results, f, indent=2)
+        
+        output = {
+            "success": True,
+            "processed_count": len(results['processed']),
+            "failed_count": len(results['failed']),
+            "dry_run": dry_run,
+            "results_file": str(results_file),
+            "processed": results['processed'],
+            "failed": results['failed']
+        }
+        
+        print(json.dumps(output, indent=2))
+        return 0
+        
+    except Exception as e:
+        print(json.dumps({
+            "success": False,
+            "error": str(e),
+            "processed_count": 0,
+            "failed_count": 0
+        }, indent=2))
+        return 1
+
+
+if __name__ == '__main__':
+    sys.exit(main())

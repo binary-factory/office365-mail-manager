@@ -1,0 +1,59 @@
+#!/Users/dome/.openclaw/skills/office365-mail-manager/.venv/bin/python3
+"""
+Tool: o365_test_connection
+Tests the Office 365/Microsoft Graph API connection.
+"""
+
+import json
+import sys
+import os
+
+# Add scripts directory to path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
+
+from auth_microsoft import test_connection
+
+
+def main():
+    """Read JSON from stdin, test connection, output JSON result."""
+    try:
+        # Read input (may be empty for this tool)
+        input_data = json.load(sys.stdin) if not sys.stdin.isatty() else {}
+    except json.JSONDecodeError:
+        input_data = {}
+    
+    try:
+        # Capture output
+        import io
+        from contextlib import redirect_stdout, redirect_stderr
+        
+        stdout_capture = io.StringIO()
+        stderr_capture = io.StringIO()
+        
+        with redirect_stdout(stdout_capture), redirect_stderr(stderr_capture):
+            result = test_connection()
+        
+        output = stdout_capture.getvalue()
+        errors = stderr_capture.getvalue()
+        
+        result_data = {
+            "success": result == 0,
+            "connected": result == 0,
+            "output": output.strip() if output else None,
+            "errors": errors.strip() if errors else None
+        }
+        
+        print(json.dumps(result_data, indent=2))
+        return 0 if result == 0 else 1
+        
+    except Exception as e:
+        print(json.dumps({
+            "success": False,
+            "connected": False,
+            "error": str(e)
+        }, indent=2))
+        return 1
+
+
+if __name__ == '__main__':
+    sys.exit(main())

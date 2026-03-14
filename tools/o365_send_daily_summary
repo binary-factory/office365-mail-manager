@@ -1,0 +1,115 @@
+#!/Users/dome/.openclaw/skills/office365-mail-manager/.venv/bin/python3
+"""
+Tool: o365_send_daily_summary
+Sends a daily summary of processed emails.
+"""
+
+import json
+import sys
+import os
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'scripts'))
+
+from auth_microsoft import load_config
+from process_feedback import load_learned_rules
+from datetime import datetime, timedelta
+from pathlib import Path
+
+
+def main():
+    """Read JSON params from stdin, generate summary, output JSON result."""
+    try:
+        input_data = json.load(sys.stdin) if not sys.stdin.isatty() else {}
+    except json.JSONDecodeError:
+        input_data = {}
+    
+    params = input_data.get('params', input_data)
+    
+    date_str = params.get('date')
+    if date_str:
+        try:
+            target_date = datetime.strptime(date_str, '%Y-%m-%d').date()
+        except ValueError:
+            print(json.dumps({
+                "success": False,
+                "error": f"Invalid date format: {date_str}. Use YYYY-MM-DD."
+            }, indent=2))
+            return 1
+    else:
+        target_date = datetime.now().date()
+    
+    try:
+        config = load_config()
+        summary_config = config.get('summary', {})
+        
+        if not summary_config.get('enabled', True):
+            print(json.dumps({
+                "success": False,
+                "error": "Daily summary is disabled in config"
+            }, indent=2))
+            return 1
+        
+        # Find decision history for the date
+        history_dir = Path(__file__).parent.parent / "memory" / "decision_history"
+        
+        date_prefix = target_date.strftime('%Y-%m-%d')
+        results_files = list(history_dir.glob(f"{date_prefix}*-results.json"))
+        
+        if not results_files:
+            summary = {
+                "date": str(target_date),
+                "total_processed": 0,
+                "categories": {},
+                "message": f"No email activity found for {target_date}"
+            }
+        else:
+            # Aggregate statistics
+            total_processed = 0
+            categories = {}
+            
+            for results_file in results_files:
+                try:
+                    with open(results_file) as f:
+                        data = json.load(f)
+                        total_processed += len(data.get('processed', []))
+                        
+                        for item in data.get('processed', []):
+                            action = item.get('action', 'unknown')
+                            if action not in categories:
+                                categories[action] = 0
+                            categories[action] += 1
+                except Exception:
+                    pass
+            
+            summary = {
+                "date": str(target_date),
+                "total_processed": total_processed,
+                "categories": categories,
+                "files_processed": len(results_files)
+            }
+        
+        learned_rules = load_learned_rules()
+        sender_rules_count = len(learned_rules.get('sender_rules', {}))
+        
+        result = {
+            "success": True,
+            "summary": summary,
+            "channel": summary_config.get('channel', 'not_configured'),
+            "target": summary_config.get('target'),
+            "learned_rules_count": sender_rules_count,
+            "message": f"Daily summary for {target_date}: {summary['total_processed']} emails processed"
+        }
+        
+        print(json.dumps(result, indent=2))
+        return 0
+        
+    except Exception as e:
+        print(json.dumps({
+            "success": False,
+            "error": str(e)
+        }, indent=2))
+        return 1
+
+
+if __name__ == '__main__':
+    sys.exit(main())
