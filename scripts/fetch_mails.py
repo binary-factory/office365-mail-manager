@@ -13,15 +13,20 @@ from auth_microsoft import get_auth_headers, load_config
 
 
 def fetch_unread_mails(limit=20):
-    """Fetch unread emails from inbox."""
+    """Fetch unread emails from inbox (only for configured user)."""
     config = load_config()
     user = config['microsoft']['userPrincipalName']
     headers = get_auth_headers()
     
-    # Query for unread messages
+    # Query for unread messages - filter by current year and direct recipient
+    current_year = datetime.now().year
+    
+    # Build filter: unread AND received this year AND addressed to configured user
+    filter_query = f"isRead eq false and receivedDateTime ge {current_year}-01-01T00:00:00Z"
+    
     url = f"https://graph.microsoft.com/v1.0/users/{user}/messages"
     params = {
-        '$filter': 'isRead eq false',
+        '$filter': filter_query,
         '$orderby': 'receivedDateTime desc',
         '$top': limit,
         '$select': 'id,subject,receivedDateTime,from,toRecipients,ccRecipients,bodyPreview,importance,hasAttachments'
@@ -34,12 +39,20 @@ def fetch_unread_mails(limit=20):
         
         mails = []
         for msg in data.get('value', []):
+            # Filter: only keep mails addressed to configured user
+            to_recipients = msg.get('toRecipients', [])
+            to_emails = [r.get('emailAddress', {}).get('address', '').lower() for r in to_recipients]
+            
+            # Skip if not addressed to configured user
+            if user.lower() not in to_emails:
+                continue
+            
             mail = {
                 'id': msg['id'],
                 'subject': msg.get('subject', '(No subject)'),
                 'received': msg.get('receivedDateTime'),
                 'from': format_recipient(msg.get('from')),
-                'to': [format_recipient(r) for r in msg.get('toRecipients', [])],
+                'to': [format_recipient(r) for r in to_recipients],
                 'cc': [format_recipient(r) for r in msg.get('ccRecipients', [])],
                 'body_preview': msg.get('bodyPreview', ''),
                 'importance': msg.get('importance', 'normal'),
