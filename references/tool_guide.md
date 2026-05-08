@@ -48,7 +48,9 @@ Detailed guide for using each tool in the Office 365 Mail Manager skill.
 **Returns:** Decisions array with:
 - `mail_id` — Email identifier
 - `category` — important/newsletter/invoice/info/spam
-- `action` — flag/move/mark_read/forward/none
+- `action` — flag/move/mark_read/forward
+
+**Default rule:** If the classifier is uncertain, return `important` + `flag`. Do not return `none` for mails that may need human review.
 - `reasoning` — Why this decision
 - `confidence` — 0.0 to 1.0
 

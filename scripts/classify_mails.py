@@ -60,16 +60,18 @@ Folge AUSSCHLIESSLICH den Kategorien und Aktionen unten.
 
 Für jede E-Mail entscheide:
 1. **Kategorie**: important / newsletter / invoice / info / spam
-2. **Aktion**: move / mark_read / forward / none
+2. **Aktion**: flag / mark_read / forward / move
 3. **Begründung**: Warum diese Entscheidung?
+
+WICHTIGE DEFAULT-REGEL: Wenn eine E-Mail nicht eindeutig als `invoice` weitergeleitet oder als `info`/`newsletter` gelesen markiert werden kann, dann ist sie `important` und muss mit `flag` markiert werden. Im Zweifel: `flag`, nicht `none`.
 
 ## Kategorien
 
-- **important**: Direkt an dich adressiert, Handlungsbedarf, Kunden, Partner → **flag**
-- **newsletter**: Massenmails, Marketing, automatisierte Updates → **mark_read**
-- **invoice**: Rechnungen, Zahlungsaufforderungen → **forward**
-- **info**: FYI-Mails ohne Handlungsbedarf → **mark_read**
-- **spam**: Unsolicited, irrelevant → **none**
+- **important**: Direkt adressiert, Handlungsbedarf, Kunden, Partner, Security, Bank, Buchhaltung, Unklarheiten → **flag**
+- **newsletter**: Eindeutige Massenmails, Marketing, automatisierte Updates → **mark_read**
+- **invoice**: Eindeutige Rechnungen, Zahlungsaufforderungen, Belege → **forward**
+- **info**: Eindeutige FYI-Mails ohne Handlungsbedarf → **mark_read**
+- **spam**: Eindeutig unerwünscht/irrelevant → **move** nach Junk oder **mark_read**
 
 ## Aktionen
 
@@ -77,7 +79,7 @@ Für jede E-Mail entscheide:
 - **move**: In Ordner verschieben (bei newsletter → Archive, invoice → Rechnungen)
 - **mark_read**: Als gelesen markieren (bei info/newsletter)
 - **forward**: Weiterleiten (bei Rechnungen)
-- **none**: Keine Aktion
+- **none**: Nicht verwenden. Wenn keine andere Aktion sicher passt, nutze **flag**.
 
 ## Gelernte Regeln (beachten)
 

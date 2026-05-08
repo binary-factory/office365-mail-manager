@@ -142,11 +142,13 @@ See [references/tool_guide.md](references/tool_guide.md) for detailed tool usage
 
 | Category | Description | Default Action |
 |----------|-------------|----------------|
-| **important** | Direct to you, action needed, customers, partners | **Flag** as important |
-| **newsletter** | Bulk emails, marketing, automated updates | Mark read |
-| **invoice** | Bills, payment requests | Forward to configured address |
-| **info** | FYI emails, no action needed | Mark read |
-| **spam** | Unsolicited, irrelevant | Move to Junk |
+| **important** | Direct to you, action needed, customers, partners, security, banking, accounting, or unclear | **Flag** as important |
+| **newsletter** | Clearly bulk emails, marketing, automated updates | Mark read |
+| **invoice** | Clear bills, payment requests, receipts | Forward to configured address |
+| **info** | Clear FYI emails with no action needed | Mark read |
+| **spam** | Clearly unsolicited, irrelevant | Move to Junk or mark read |
+
+**Default rule:** If a mail is not clearly safe to mark read and not clearly an invoice to forward, flag it. No uncertain mail should be left unprocessed as `none`.
 
 ## User Feedback Patterns
 
