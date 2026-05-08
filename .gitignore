@@ -22,13 +22,17 @@ env/
 .DS_Store
 Thumbs.db
 
-# Runtime data (decision logs and temp files)
-memory/decision_history/
-memory/temp_*.json
-memory/all_*.json
+# Runtime data (user-specific; created locally by the skill)
+memory/
+
+# Local/generated scratch files
+INVOICE_LEARNING.md
+amp
+cronjob.sh
 
 # Logs
 *.log
 
-# Local config (user-specific)
+# Local config / secrets
 .env
+*.env

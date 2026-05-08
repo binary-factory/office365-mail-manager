@@ -63,7 +63,11 @@ Call `o365_test_connection` to verify everything works.
 3. o365_execute_actions (dry_run: true, with the decisions)
 ```
 
-## 7. Enable Cron (Optional)
+## 7. Enable Scheduling (Optional)
+
+Prefer OpenClaw `cron` jobs for scheduled runs. Use Gateway-backed cron instead of shell sleep loops.
+
+Example cadence:
 
 ```bash
 # Check every 30 minutes
@@ -74,3 +78,15 @@ openclaw cron add --name="mail-check-30min" --schedule="*/30 * * * *" \
 openclaw cron add --name="mail-daily-summary" --schedule="0 9 * * *" \
   --command="openclaw skills run office365-mail-manager --action=send-summary"
 ```
+
+## Runtime Data
+
+The skill writes local runtime data under `memory/`:
+
+- `learned_rules.json` — user feedback rules
+- `sender_profiles.json` — sender behavior cache
+- `folder_ids.json` — Graph folder lookup cache
+- `token_cache.json` — Microsoft auth token cache
+- `decision_history/` — batch logs and prompts
+
+Do not commit `memory/` contents. They are user-specific operational data.
