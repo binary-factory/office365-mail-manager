@@ -24,6 +24,9 @@ def main():
     params = input_data.get('params', input_data)  # Support both wrapped and direct
     
     limit = params.get('limit', 20)
+    # If limit is 0 or 'all', fetch all unread mails
+    if limit == 0 or limit == 'all':
+        limit = 'all'
     save = params.get('save_batch', True)
     
     try:

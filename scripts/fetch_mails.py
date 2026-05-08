@@ -12,53 +12,94 @@ from pathlib import Path
 from auth_microsoft import get_auth_headers, load_config
 
 
-def fetch_unread_mails(limit=20):
-    """Fetch unread emails from inbox (only for configured user)."""
+def count_unread_mails():
+    """Count total unread emails in inbox."""
     config = load_config()
     user = config['microsoft']['userPrincipalName']
     headers = get_auth_headers()
     
-    # Query for unread messages - filter by current year and direct recipient
-    current_year = datetime.now().year
+    filter_query = "isRead eq false"
     
-    # Build filter: unread AND received this year AND addressed to configured user
-    filter_query = f"isRead eq false and receivedDateTime ge {current_year}-01-01T00:00:00Z"
-    
-    url = f"https://graph.microsoft.com/v1.0/users/{user}/messages"
-    params = {
-        '$filter': filter_query,
-        '$orderby': 'receivedDateTime desc',
-        '$top': limit,
-        '$select': 'id,subject,receivedDateTime,from,toRecipients,ccRecipients,bodyPreview,importance,hasAttachments'
-    }
+    # Use $count to get total
+    url = f"https://graph.microsoft.com/v1.0/users/{user}/messages/$count"
+    params = {'$filter': filter_query}
     
     try:
         response = requests.get(url, headers=headers, params=params, timeout=60)
         response.raise_for_status()
-        data = response.json()
-        
-        mails = []
-        for msg in data.get('value', []):
-            # Filter: only keep mails addressed to configured user
-            to_recipients = msg.get('toRecipients', [])
-            to_emails = [r.get('emailAddress', {}).get('address', '').lower() for r in to_recipients]
+        return int(response.text)
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to count mails: {e}", file=sys.stderr)
+        return 0
+
+
+def fetch_unread_mails(limit=20):
+    """Fetch unread emails from inbox (only for configured user).
+    
+    If limit is 0 or 'all', fetches ALL unread mails in batches.
+    """
+    config = load_config()
+    user = config['microsoft']['userPrincipalName']
+    headers = get_auth_headers()
+    
+    # Query for unread messages
+    filter_query = "isRead eq false"
+    
+    # If limit is 0 or 'all', fetch all in batches
+    fetch_all = (limit == 0 or limit == 'all')
+    batch_size = 20  # Microsoft Graph recommended batch size
+    
+    if fetch_all:
+        total = count_unread_mails()
+        print(f"Found {total} unread mails. Fetching in batches of {batch_size}...", file=sys.stderr)
+        limit = total  # Set limit to total count
+    
+    url = f"https://graph.microsoft.com/v1.0/users/{user}/messages"
+    
+    mails = []
+    next_link = None
+    fetched = 0
+    
+    try:
+        while fetched < limit:
+            current_batch = min(batch_size, limit - fetched)
             
-            # Skip if not addressed to configured user
-            if user.lower() not in to_emails:
-                continue
+            if next_link:
+                # Use @odata.nextLink for pagination
+                response = requests.get(next_link, headers=headers, timeout=60)
+            else:
+                params = {
+                    '$filter': filter_query,
+                    '$orderby': 'receivedDateTime desc',
+                    '$top': current_batch,
+                    '$select': 'id,subject,receivedDateTime,from,toRecipients,ccRecipients,bodyPreview,importance,hasAttachments'
+                }
+                response = requests.get(url, headers=headers, params=params, timeout=60)
             
-            mail = {
-                'id': msg['id'],
-                'subject': msg.get('subject', '(No subject)'),
-                'received': msg.get('receivedDateTime'),
-                'from': format_recipient(msg.get('from')),
-                'to': [format_recipient(r) for r in to_recipients],
-                'cc': [format_recipient(r) for r in msg.get('ccRecipients', [])],
-                'body_preview': msg.get('bodyPreview', ''),
-                'importance': msg.get('importance', 'normal'),
-                'has_attachments': msg.get('hasAttachments', False)
-            }
-            mails.append(mail)
+            response.raise_for_status()
+            data = response.json()
+            
+            for msg in data.get('value', []):
+                to_recipients = msg.get('toRecipients', [])
+                
+                mail = {
+                    'id': msg['id'],
+                    'subject': msg.get('subject', '(No subject)'),
+                    'received': msg.get('receivedDateTime'),
+                    'from': format_recipient(msg.get('from')),
+                    'to': [format_recipient(r) for r in to_recipients],
+                    'cc': [format_recipient(r) for r in msg.get('ccRecipients', [])],
+                    'body_preview': msg.get('bodyPreview', ''),
+                    'importance': msg.get('importance', 'normal'),
+                    'has_attachments': msg.get('hasAttachments', False)
+                }
+                mails.append(mail)
+                fetched += 1
+            
+            # Check for next page
+            next_link = data.get('@odata.nextLink')
+            if not next_link:
+                break
         
         return mails
     
