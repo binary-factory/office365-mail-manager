@@ -34,9 +34,25 @@ def load_config():
             env = skill_config.get('env', {})
             
             # Support both formats: O365CLIENTID (new) and O365_CLIENT_ID (old)
-            # Prioritize the new format (without underscores) as it contains the rotated secret
+            # Also support direct environment variables for secrets (O365_CLIENT_SECRET, etc.)
             def get_env(key_with_underscore, key_without_underscore):
-                return env.get(key_without_underscore) or env.get(key_with_underscore)
+                # Priority: 1) OS env var (OpenClaw resolves ${...} and sets these), 
+                #           2) config env without underscore, 3) config env with underscore
+                # Skip config values that are ${...} placeholders (unresolved)
+                def _is_placeholder(v):
+                    return v and isinstance(v, str) and v.startswith('${') and v.endswith('}')
+                
+                # Check OS environment first (OpenClaw sets skill env vars here)
+                os_val = os.environ.get(key_with_underscore)
+                if os_val:
+                    return os_val
+                
+                # Then check config values, skipping unresolved placeholders
+                cfg_val = env.get(key_without_underscore) or env.get(key_with_underscore)
+                if cfg_val and not _is_placeholder(cfg_val):
+                    return cfg_val
+                
+                return None
             
             # Build nested config from flat env vars
             result = {

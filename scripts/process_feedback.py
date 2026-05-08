@@ -55,6 +55,14 @@ def save_sender_profiles(profiles):
         json.dump(profiles, f, indent=2)
 
 
+def validate_email_address(email):
+    """Validate email format to prevent injection in rules."""
+    import re
+    # Basic email validation
+    pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+    return re.match(pattern, email) is not None
+
+
 def process_feedback(feedback_text, batch_timestamp=None):
     """Process user feedback and update rules."""
     rules = load_learned_rules()
@@ -72,7 +80,33 @@ def process_feedback(feedback_text, batch_timestamp=None):
         feedback_entry['type'] = 'confirm_all'
         print("✓ Feedback: Alle Entscheidungen bestätigt")
     
-    # Pattern 2: "{number} falsch, {correction}"
+    # Pattern 2: Blacklist — "falsch" / "wrong" / "blacklist {email}"
+    elif match := re.search(r'(?:blacklist|falsch|wrong)\s+([\w\.-]+@[\w\.-]+)', feedback_text, re.I):
+        email = match.group(1).lower()
+        
+        # Validate email before storing
+        if not validate_email_address(email):
+            print(f"✗ Ungültige E-Mail-Adresse: {email}")
+            return False
+        
+        # Add to forward blacklist
+        if 'forward_blacklist' not in rules:
+            rules['forward_blacklist'] = {}
+        
+        rules['forward_blacklist'][email] = {
+            'added_at': datetime.now().isoformat(),
+            'reason': feedback_text,
+            'confidence': 1.0
+        }
+        
+        feedback_entry['parsed_rules'].append({
+            'type': 'blacklist',
+            'email': email,
+            'action': 'block_forward'
+        })
+        print(f"✓ Blacklist: {email} wird nicht mehr weitergeleitet")
+    
+    # Pattern 3: "{number} falsch, {correction}"
     # e.g., "3 falsch, wichtig" or "#2 should be newsletter"
     elif match := re.search(r'(?:#?\s*(\d+)\s+(?:falsch|wrong|should be|sollte sein)\s*,?\s*(.+))', feedback_text, re.I):
         mail_index = match.group(1)
@@ -91,11 +125,16 @@ def process_feedback(feedback_text, batch_timestamp=None):
         feedback_entry['parsed_rules'].append(new_rule)
         print(f'✓ Feedback: Mail #{mail_index} sollte "{category}" sein')
     
-    # Pattern 3: "{email} always {category}"
+    # Pattern 4: "{email} always {category}"
     # e.g., "newsletter@tech.de always newsletter"
     elif match := re.search(r'([\w\.-]+@[\w\.-]+)\s+(?:immer|always)\s+(.+)', feedback_text, re.I):
         email = match.group(1).lower()
         category = map_to_category(match.group(2).strip())
+        
+        # Validate email
+        if not validate_email_address(email):
+            print(f"✗ Ungültige E-Mail-Adresse: {email}")
+            return False
         
         rules['sender_rules'][email] = {
             'category': category,
@@ -113,7 +152,7 @@ def process_feedback(feedback_text, batch_timestamp=None):
         feedback_entry['parsed_rules'].append(new_rule)
         print(f"✓ Gelernt: {email} → immer {category}")
     
-    # Pattern 4: "{keyword} immer {action}"
+    # Pattern 5: "{keyword} immer {action}"
     # e.g., "Rechnung always forward"
     elif match := re.search(r'"?(.+?)"?\s+(?:immer|always)\s+(.+)', feedback_text, re.I):
         keyword = match.group(1).strip().lower()
@@ -137,6 +176,7 @@ def process_feedback(feedback_text, batch_timestamp=None):
     else:
         print(f"? Feedback nicht erkannt: {feedback_text}")
         print("  Nutze: 'Alles gut', '3 falsch, wichtig', 'absender@firma.de immer spam'")
+        print("  Blacklist: 'falsch absender@firma.de' oder 'blacklist absender@firma.de'")
         return False
     
     # Save feedback to history

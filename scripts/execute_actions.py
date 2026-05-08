@@ -10,14 +10,46 @@ import requests
 from pathlib import Path
 from auth_microsoft import get_auth_headers, load_config
 
+sys.path.insert(0, str(Path(__file__).parent))
+from process_feedback import load_learned_rules
 
-def execute_action(mail_id, action, params=None):
+
+def check_blacklist(email):
+    """Check if sender is blacklisted from forwarding."""
+    rules = load_learned_rules()
+    blacklist = rules.get('forward_blacklist', {})
+    return email.lower() in blacklist
+
+
+def execute_action(mail_id, action, params=None, mail_from=None):
     """Execute a single action on an email."""
     config = load_config()
     user = config['microsoft']['userPrincipalName']
     headers = get_auth_headers()
     
     base_url = f"https://graph.microsoft.com/v1.0/users/{user}/messages/{mail_id}"
+    
+    # Security check: verify forward target is allowed
+    if action == 'forward':
+        to_address = params.get('to', '')
+        
+        # Only allow forwarding to binary-factory.de domain
+        if not to_address.endswith('@binary-factory.de'):
+            return {
+                'success': False,
+                'error': f'Forward to non-company domain blocked: {to_address}',
+                'action': action,
+                'mail_id': mail_id
+            }
+        
+        # Check blacklist
+        if mail_from and check_blacklist(mail_from):
+            return {
+                'success': False,
+                'error': f'Sender {mail_from} is blacklisted from forwarding',
+                'action': action,
+                'mail_id': mail_id
+            }
     
     try:
         if action == 'mark_read':
@@ -81,12 +113,50 @@ def execute_action(mail_id, action, params=None):
                 timeout=30
             )
             response.raise_for_status()
+            
+            # Also mark as read after forwarding
+            requests.patch(
+                base_url,
+                headers=headers,
+                json={'isRead': True},
+                timeout=30
+            )
+            
             return {
                 'success': True,
                 'action': 'forward',
                 'mail_id': mail_id,
                 'to': to_address
             }
+        
+        elif action == 'flag':
+            response = requests.patch(
+                base_url,
+                headers=headers,
+                json={'flag': {'flagStatus': 'flagged'}},
+                timeout=30
+            )
+            response.raise_for_status()
+            
+            # Also mark as read after flagging
+            requests.patch(
+                base_url,
+                headers=headers,
+                json={'isRead': True},
+                timeout=30
+            )
+            
+            return {'success': True, 'action': 'flag', 'mail_id': mail_id}
+        
+        elif action == 'unflag':
+            response = requests.patch(
+                base_url,
+                headers=headers,
+                json={'flag': {'flagStatus': 'notFlagged'}},
+                timeout=30
+            )
+            response.raise_for_status()
+            return {'success': True, 'action': 'unflag', 'mail_id': mail_id}
         
         else:
             return {'success': False, 'error': f'Unknown action: {action}'}
@@ -181,7 +251,9 @@ def process_batch(decisions_file, dry_run=False):
             })
             print(f"[DRY RUN] Would {action} mail {mail_id}")
         else:
-            result = execute_action(mail_id, action, params)
+            # Get sender from decision metadata for blacklist check
+            mail_from = decision.get('mail_metadata', {}).get('from')
+            result = execute_action(mail_id, action, params, mail_from)
             
             if result['success']:
                 results['processed'].append(result)
